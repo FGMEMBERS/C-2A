@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+ 
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.406 </y-m>
+      <z-m> -0.192 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.406 </y-m>
+      <z-m> -0.192 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.088 </x-m>
+      <y-m> -0.494 </y-m>
+      <z-m> -0.286 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.088 </x-m>
+      <y-m>  0.315 </y-m>
+      <z-m> -0.286 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

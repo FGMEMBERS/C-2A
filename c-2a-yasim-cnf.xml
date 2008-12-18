@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+GRUMMAN C 2A
+December 2008 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="c-2a-base.xml">
+
+  <sim>
+
+    <description>Grumman C 2A (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>c-2a-yasim</aero>
+
+  </sim>
+    
+</PropertyList>
