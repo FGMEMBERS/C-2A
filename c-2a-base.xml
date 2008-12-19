@@ -61,10 +61,13 @@
 
   </sim>
 
+  <surface-positions>
+    <wing-fold-pos-norm alias="/instrumentation/doors/wings/position-norm" />
+  </surface-positions>
+
   <input>
-    <keyboard include="Nasal/c-2a-keyboard.xml"/>
-<!--
-      <keyboard include="../../Input/Keyboard/carrier-bindings.xml">
+      <keyboard include="Nasal/c-2a-keyboard.xml"/>
+<!--  <keyboard include="../../Input/Keyboard/carrier-bindings.xml">
       <key n="100">
         <name>d</name>
         <desc>Crew door</desc>

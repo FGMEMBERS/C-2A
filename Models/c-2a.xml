@@ -204,8 +204,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AileGauche</object-name>
-    <!-- <property>controls/flight/wing-fold</property> -->
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>surface-positions/wing-fold-pos-norm</property>
     <factor>115</factor>
     <axis>
       <x1-m> -0.607 </x1-m>
@@ -220,8 +219,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AileDroite</object-name>
-    <!-- <property>controls/flight/wing-fold</property> -->
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>surface-positions/wing-fold-pos-norm</property>
     <factor>-115</factor>
     <axis>
       <x1-m> -0.607 </x1-m>
