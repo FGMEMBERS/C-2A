@@ -192,8 +192,9 @@
           <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
     </gear>
 
-
-    <tank x="0.0" y="0.0" z="0.0" capacity="2000"/>
+    <!-- 2 x 912 gallons (2 x 5327 lb)-->
+    <tank x="0.839" y="2.110" z="0.187" capacity="5327"/>
+    <tank x="0.839" y="-2.110" z="0.187" capacity="5327"/>
 
     <!-- Crosse d'appontage -->
     <hook x="-3.282" y="0.0" z="-1.789" length="1.169" down-angle="40" up-angle="0">

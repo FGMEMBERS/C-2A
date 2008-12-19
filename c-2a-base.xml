@@ -88,10 +88,10 @@
   <controls>
     <engines>
       <engine n="0">
-        <magnetos>3</magnetos>
+        <magnetos>0</magnetos>
       </engine>
       <engine n="1">
-        <magnetos>3</magnetos>
+        <magnetos>0</magnetos>
       </engine>
     </engines>
   </controls>
@@ -100,12 +100,12 @@
     <engine n="0">
       <engine-num type="int">0</engine-num>
       <rpm>500</rpm>
-      <running>true</running>
+      <running>false</running>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
       <rpm>500</rpm>
-      <running>true</running>
+      <running>false</running>
     </engine>
   </engines>
 

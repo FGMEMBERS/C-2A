@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>empty.ac</path>
+
+  <animation>
+    <object-name>contour</object-name>
+    <object-name>Face</object-name>
+    <object-name>visse1</object-name>
+    <object-name>visse2</object-name>
+    <object-name>visse3</object-name>
+    <object-name>visse4</object-name>
+    <object-name>sur</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.0 </blue>
+      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+
+

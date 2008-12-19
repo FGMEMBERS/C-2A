@@ -63,5 +63,150 @@
     </offsets>
   </model>
 
+  <!-- empty for the moment -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.074 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.350 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.087 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.293 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.102 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.237 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.116 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.180 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.129 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.123 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.141 </x-m>
+      <y-m> -0.247 </y-m>
+      <z-m> -0.067 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.074 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.350 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.087 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.293 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.102 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.237 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.116 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.180 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.129 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.123 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.141 </x-m>
+      <y-m> -0.193 </y-m>
+      <z-m> -0.067 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -13.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 
