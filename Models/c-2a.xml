@@ -53,9 +53,13 @@
     <object-name>axeA</object-name>
     <object-name>axeG</object-name>
     <object-name>axeD</object-name>
+    <object-name>air</object-name>
+    <object-name>air2</object-name>
+    <object-name>antennes</object-name>
 
     <!-- Transparence -->
     <object-name>vitres</object-name>
+    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -68,6 +72,7 @@
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -111,6 +116,9 @@
     <object-name>axeA</object-name>
     <object-name>axeG</object-name>
     <object-name>axeD</object-name>
+    <object-name>air</object-name>
+    <object-name>air2</object-name>
+    <object-name>antennes</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -412,11 +420,11 @@
       </entry>
       <entry>
         <ind>    0.2 </ind>
-        <dep> -120.0 </dep>
+        <dep> -160.0 </dep>
       </entry>
       <entry>
         <ind>    1.0 </ind>
-        <dep> -120.0 </dep>
+        <dep> -160.0 </dep>
       </entry>
     </interpolation>
     <axis>
@@ -440,11 +448,11 @@
       </entry>
       <entry>
         <ind>   0.2 </ind>
-        <dep> 120.0 </dep>
+        <dep> 160.0 </dep>
       </entry>
       <entry>
         <ind>   1.0 </ind>
-        <dep> 120.0 </dep>
+        <dep> 160.0 </dep>
       </entry>
     </interpolation>
     <axis>
