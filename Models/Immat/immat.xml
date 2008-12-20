@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>immat.ac</path>
+
+  <animation>
+    <!-- Immatriculations -->
+    <object-name>ImatFuselageL1</object-name>
+    <object-name>ImatFuselageL2</object-name>
+    <object-name>ImatFuselageL3</object-name>
+    <object-name>ImatFuselageL4</object-name>
+    <object-name>ImatFuselageL5</object-name>
+    <object-name>ImatFuselageL6</object-name>
+    <object-name>ImatFuselageR1</object-name>
+    <object-name>ImatFuselageR2</object-name>
+    <object-name>ImatFuselageR3</object-name>
+    <object-name>ImatFuselageR4</object-name>
+    <object-name>ImatFuselageR5</object-name>
+    <object-name>ImatFuselageR6</object-name>
+    <object-name>ImatFlapL1</object-name>
+    <object-name>ImatFlapL2</object-name>
+    <object-name>ImatFlapL3</object-name>
+    <object-name>ImatFlapL4</object-name>
+    <object-name>ImatFlapL5</object-name>
+    <object-name>ImatFlapL6</object-name>
+    <object-name>ImatFlapR1</object-name>
+    <object-name>ImatFlapR2</object-name>
+    <object-name>ImatFlapR3</object-name>
+    <object-name>ImatFlapR4</object-name>
+    <object-name>ImatFlapR5</object-name>
+    <object-name>ImatFlapR6</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>ImatFuselageL1</object-name>
+    <object-name>ImatFuselageL2</object-name>
+    <object-name>ImatFuselageL3</object-name>
+    <object-name>ImatFuselageL4</object-name>
+    <object-name>ImatFuselageL5</object-name>
+    <object-name>ImatFuselageL6</object-name>
+    <object-name>ImatFuselageR1</object-name>
+    <object-name>ImatFuselageR2</object-name>
+    <object-name>ImatFuselageR3</object-name>
+    <object-name>ImatFuselageR4</object-name>
+    <object-name>ImatFuselageR5</object-name>
+    <object-name>ImatFuselageR6</object-name>
+    <object-name>ImatFlapL1</object-name>
+    <object-name>ImatFlapL2</object-name>
+    <object-name>ImatFlapL3</object-name>
+    <object-name>ImatFlapL4</object-name>
+    <object-name>ImatFlapL5</object-name>
+    <object-name>ImatFlapL6</object-name>
+    <object-name>ImatFlapR1</object-name>
+    <object-name>ImatFlapR2</object-name>
+    <object-name>ImatFlapR3</object-name>
+    <object-name>ImatFlapR4</object-name>
+    <object-name>ImatFlapR5</object-name>
+    <object-name>ImatFlapR6</object-name>
+  </animation>
+
+  <!-- Ne me demandez pas comment j'ai obtenu la formule du facteur, ce fut au feeling ;) -->
+  <!--
+       Largeur de l'image complète : 2048 pixels
+       Largeur d'un caractère      :   50 pixels
+       Nombre de cases             : 2048/50 = 40.96
+       factor                      : 1/40.96 = 0.0244140625
+  -->
+  <!-- Fuselage gauche -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageL6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Fuselage droit -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Volet gauche -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapL6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Volet droit -->
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR1</object-name> 
+    <property>sim/multiplay/generic/int[0]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR2</object-name> 
+    <property>sim/multiplay/generic/int[1]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFlapR6</object-name> 
+    <property>sim/multiplay/generic/int[5]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <!-- Mouvement avec les volets -->
+  <animation>
+    <name>VoletGauche</name>
+    <object-name>ImatFlapL1</object-name>
+    <object-name>ImatFlapL2</object-name>
+    <object-name>ImatFlapL3</object-name>
+    <object-name>ImatFlapL4</object-name>
+    <object-name>ImatFlapL5</object-name>
+    <object-name>ImatFlapL6</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>VoletGauche</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-35.0</factor>
+    <axis>
+      <x1-m>  0.342 </x1-m>
+      <y1-m> -1.093 </y1-m>
+      <z1-m> -0.349 </z1-m>
+      <x2-m>  0.186 </x2-m>
+      <y2-m> -3.976 </y2-m>
+      <z2-m> -0.216 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>VoletDroit</name>
+    <object-name>ImatFlapR1</object-name>
+    <object-name>ImatFlapR2</object-name>
+    <object-name>ImatFlapR3</object-name>
+    <object-name>ImatFlapR4</object-name>
+    <object-name>ImatFlapR5</object-name>
+    <object-name>ImatFlapR6</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>VoletDroit</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-35.0</factor>
+    <axis>
+      <x1-m>  0.186 </x1-m>
+      <y1-m>  3.976 </y1-m>
+      <z1-m> -0.216 </z1-m>
+      <x2-m>  0.342 </x2-m>
+      <y2-m>  1.093 </y2-m>
+      <z2-m> -0.349 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
+

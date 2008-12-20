@@ -13,6 +13,13 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>c2a.immat_dialog.toggle()</script>
+        </binding>
+      </item>
     </menu>
   </default>
 

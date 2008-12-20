@@ -88,34 +88,12 @@
 -->
   </input>
  
-  <controls>
-    <engines>
-      <engine n="0">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="1">
-        <magnetos>0</magnetos>
-      </engine>
-    </engines>
-  </controls>
-
-  <engines>
-    <engine n="0">
-      <engine-num type="int">0</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
-    </engine>
-    <engine n="1">
-      <engine-num type="int">1</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
-    </engine>
-  </engines>
-
   <nasal>
     <c2a>
       <file>Aircraft/C-2A/Nasal/doors.nas</file>
-      <file>Aircraft/B-17/Nasal/liveries.nas</file>
+      <file>Aircraft/C-2A/Nasal/liveries.nas</file>
+      <file>Aircraft/C-2A/Nasal/immat.nas</file>
+      <file>Aircraft/C-2A/Nasal/light.nas</file>
     </c2a>
   </nasal>
 
