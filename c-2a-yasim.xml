@@ -3,8 +3,8 @@
      wingspan     : 24.69 m
      length       : 17.30 m
      height       :  4.84 m
-     Moteurs      : 4 Allison T56-A-15 turboprops 4591 CV, 13820 RPM, 871 kg (1920 lbs)
-     Helices      : Hamilton Standard 43E60-6901A (1074 lbs)
+     Moteurs      : 2 Allison T56-A-425 turboprops 4591 CV, 13820 RPM, 871 kg (1920 lbs)
+     Helices      : Hamilton Standard 54460-1 (1074 lbs)
      Empty weight : 33746 lb
      Cruise speed : 251 kts
 -->
@@ -102,15 +102,15 @@
 
   <!-- Moteur gauche
                  
-                                         Rayon * Rayon * Mass(kg)   1.85*1.85 * 185
-                 moment d'après la doc : ________________________ = _______________ = 211.05
+                                         Rayon * Rayon * Mass(kg)   2.43*2.43 * 487.15
+                 moment d'après la doc : ________________________ = __________________ = 958.85
                                                      3                      3
   -->
   <propeller x="2.743" y="3.169" z="-0.422"
              mass="2994" 
-             moment="211.05" 
-             radius="1.85" 
-             cruise-speed="251" 
+             moment="958.85" 
+             radius="2.43" 
+             cruise-speed="245" 
              cruise-rpm="920" 
              cruise-power="1800" 
              cruise-alt="25000" 
@@ -119,7 +119,7 @@
              <actionpt x="4.132" y="3.169" z="0.029"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="4591" 
-                             eng-rpm="1020" 
+                             eng-rpm="2700" 
                              alt="28000" 
                              flat-rating="4150" 
                              min-n2="70" 
@@ -134,9 +134,9 @@
   <!-- Moteur droit -->
   <propeller x="2.743" y="-3.169" z="-0.422"
              mass="2994" 
-             moment="211.05" 
-             radius="2.8" 
-             cruise-speed="251" 
+             moment="958.85" 
+             radius="2.43" 
+             cruise-speed="245" 
              cruise-rpm="920" 
              cruise-power="1800" 
              cruise-alt="25000" 
@@ -145,7 +145,7 @@
              <actionpt x="4.132" y="-3.169" z="0.029"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="4591" 
-                             eng-rpm="1020" 
+                             eng-rpm="2700" 
                              alt="28000" 
                              flat-rating="4150" 
                              min-n2="70" 
@@ -199,9 +199,9 @@
           <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
     </gear>
 
-    <!-- 2 x 912 gallons (2 x 5327 lb)-->
-    <tank x="0.839" y="2.110" z="0.187" capacity="5327"/>
-    <tank x="0.839" y="-2.110" z="0.187" capacity="5327"/>
+    <!-- 2 x 912 gallons (2 x 6200 lb)-->
+    <tank x="0.839" y="2.110" z="0.187" capacity="6200"/>
+    <tank x="0.839" y="-2.110" z="0.187" capacity="6200"/>
 
     <!-- Crosse d'appontage -->
     <hook x="-3.282" y="0.0" z="-1.789" length="1.169" down-angle="40" up-angle="0">

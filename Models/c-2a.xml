@@ -56,10 +56,14 @@
     <object-name>air</object-name>
     <object-name>air2</object-name>
     <object-name>antennes</object-name>
+    <object-name>lampeA1</object-name>
 
     <!-- Transparence -->
     <object-name>vitres</object-name>
     <object-name>cables</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampeA</object-name>
   </animation>
 
   <animation>
@@ -73,6 +77,9 @@
     <type>noshadow</type>
     <object-name>vitres</object-name>
     <object-name>cables</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampeA</object-name>
   </animation>
 
   <animation>
@@ -119,6 +126,7 @@
     <object-name>air</object-name>
     <object-name>air2</object-name>
     <object-name>antennes</object-name>
+    <object-name>lampeA1</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -167,7 +175,7 @@
     </offsets>
   </model>
 
-  <!-- Immatriculatoin -->
+  <!-- Immatriculation -->
   <model>
     <path>Aircraft/C-2A/Models/Immat/immat.xml</path>
     <offsets>
@@ -180,6 +188,45 @@
     </offsets>
   </model>
 
+  <!-- Effets lumineux -->
+  <model>
+    <path>Aircraft/C-2A/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 7.175 </x-m>
+      <y-m> 3.910 </y-m>
+      <z-m> 1.892 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeGauche</name>
+    <path>Aircraft/C-2A/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -0.832 </x-m>
+      <y-m> -12.178 </y-m>
+      <z-m>   0.614 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeDroite</name>
+    <path>Aircraft/C-2A/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m>  -0.832 </x-m>
+      <y-m>  12.178 </y-m>
+      <z-m>   0.614 </z-m>
+    </offsets>
+  </model>
+<!--
+  <model>
+    <path>Aircraft/C-2A/Models/light/Whitelight.xml</path>
+    <offsets>
+      <x-m> -2.574 </x-m>
+      <y-m>  0.074 </y-m>
+      <z-m> -0.643 </z-m>
+    </offsets>
+  </model>
+-->
   <!-- Les hélices --> 
   <model>
     <path>Aircraft/C-2A/Models/Propellers/propeller1.xml</path>
@@ -205,6 +252,8 @@
     <object-name>aileG</object-name>
     <object-name>aileronG</object-name>
     <object-name>voletG1</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>LampeGauche</object-name>
   </animation>
 
   <animation>
@@ -212,6 +261,8 @@
     <object-name>aileD</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletD1</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>LampeDroite</object-name>
   </animation>
 
   <animation>
