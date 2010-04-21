@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- GRUMMAN C 2A : 2008 BARANGER Emmanuel 
 
      wingspan     : 24.69 m
@@ -33,22 +35,24 @@
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
-  <cockpit x="9.267" y="-0.570" z=".154"/>
+  <cockpit x="6.700" y="-0.570" z="0.154"/>
 
   <!-- Fuselage -->
-  <fuselage ax="8.641"  ay="0" az="-0.425" bx="-8.651" by="0" bz="0.510" width="3" taper="0.5" midpoint="0.5"/>
+  <fuselage ax="8.641" ay="0" az="-0.850" bx="-3.769" by="0" bz="-0.737" width="2.4" taper="1" midpoint="0"/>
+  <fuselage ax="-3.769" ay="0" az="-0.737" bx="-8.716" by="0" bz="0.510" width="2.4" taper="1" midpoint="0"/>
 
   <!-- Ailes -->
   <wing x="0.625" y="0.549" z="0.131"
         chord="3.747" 
-        length="11.565" 
+        length="11.8" 
         taper="0.38"  
-        sweep="0" 
-        dihedral="2" 
-        camber="0.0-">
+        sweep="1.5" 
+        dihedral="2.5" 
+        camber="0.05">
         <stall aoa="18" width="6" peak="1.5"/>
-        <flap0 start="0" end=".6" lift="1.4" drag="1.9"/>
-        <flap1 start=".6" end=".95" lift="1.4" drag="1.2"/>
+        <flap0 start="0.00" end="0.54" lift="1.4" drag="1.9"/>
+        <flap1 start="0.54" end="0.95" lift="1.4" drag="1.2"/>
+
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -64,7 +68,8 @@
   <hstab x="-7.220" y="0.0" z="0.866"
          chord="2.357"
          length="3.923"
-         taper="0.75">
+         taper="0.75"
+         sweep="4">
          <stall aoa="18" width="4" peak="1.5"/>
          <flap0 start="0" end="0.95" lift="1.5" drag="1.4"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
@@ -72,6 +77,20 @@
 
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
+
+  <vstab x="-7.110" y="1.919" z="0.890"
+         chord="1.535"
+         length="1.450"
+         taper="0.6"
+         sweep="12">
+  </vstab>
+
+  <vstab x="-7.110" y="-1.919" z="0.890"
+         chord="1.535"
+         length="1.450"
+         taper="0.6"
+         sweep="12">
+  </vstab>
 
   <!-- Direction gauche -->
   <vstab x="-7.566" y="3.925" z="-0.848"
@@ -102,14 +121,11 @@
 
   <!-- Moteur gauche
                  
-                                         Rayon * Rayon * Mass(kg)   2.43*2.43 * 487.15
-                 moment d'après la doc : ________________________ = __________________ = 958.85
-                                                     3                      3
   -->
   <propeller x="2.743" y="3.169" z="-0.422"
              mass="2994" 
              moment="958.85" 
-             radius="2.43" 
+             radius="1.837" 
              cruise-speed="245" 
              cruise-rpm="920" 
              cruise-power="1800" 
@@ -135,7 +151,7 @@
   <propeller x="2.743" y="-3.169" z="-0.422"
              mass="2994" 
              moment="958.85" 
-             radius="2.43" 
+             radius="1.837" 
              cruise-speed="245" 
              cruise-rpm="920" 
              cruise-power="1800" 
@@ -215,7 +231,7 @@
                <control-speed control="LEXTEND" transition-time="1"/>
     </launchbar>
     
-    <!-- CG Théorique : x=0.625 y=0.0 z=-0.131" -->
+    <!-- CG Theorique : x=0.625 y=0.0 z=-0.131" -->
     <ballast x="5.0" y="0.0" z="0.0" mass="6000"/>
 
 </airplane>

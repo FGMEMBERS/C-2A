@@ -1,17 +1,13 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Attitude/Turn Indicator -->
-
 <PropertyList>
 
   <path>ai.ac</path>
 
   <animation>
     <object-name>contour</object-name>
-    <object-name>visse1</object-name>
-    <object-name>visse2</object-name>
-    <object-name>visse3</object-name>
-    <object-name>visse4</object-name>
+    <object-name>visses</object-name>
     <object-name>AttitudeBall</object-name>
     <object-name>barre</object-name>
     <object-name>barre1</object-name>
@@ -43,10 +39,10 @@
     <object-name>BallTurn</object-name>
     <object-name>FaceTurn</object-name>
     <emission>
-      <red>   0.6 </red>
-      <green> 0.3 </green>
-      <blue>  0.3 </blue>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission> 
   </animation>    
 
@@ -106,14 +102,8 @@
     <object-name>BallTurn</object-name>
     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <interpolation>
-      <entry>
-        <ind>  -1.1 </ind>
-        <dep> -22.0 </dep>
-      </entry>
-      <entry>
-        <ind>  1.1 </ind>
-        <dep> 22.0 </dep>
-      </entry>
+      <entry><ind> -1.1 </ind><dep> -22 </dep></entry>
+      <entry><ind>  1.1 </ind><dep>  22 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.001 </x-m>

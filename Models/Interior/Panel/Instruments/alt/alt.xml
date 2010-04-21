@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -7,10 +7,7 @@
   <animation>
     <object-name>contour</object-name>
     <object-name>Face</object-name>
-    <object-name>visse1</object-name>
-    <object-name>visse2</object-name>
-    <object-name>visse3</object-name>
-    <object-name>visse4</object-name>
+    <object-name>visses</object-name>
     <object-name>disk</object-name>
     <object-name>inhg</object-name>
     <object-name>Needle100</object-name>
@@ -41,10 +38,10 @@
     <object-name>Needle1000</object-name>
     <object-name>Needle100</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -65,9 +62,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -77,9 +74,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -89,9 +86,9 @@
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -112,13 +109,13 @@
       <entry><ind> 31.40 </ind><dep> 350.00 </dep></entry>
      </interpolation>
     <center>
-      <x>0.25</x>
-      <y>0.25</y>
+      <x> 0.25 </x>
+      <y> 0.25 </y>
     </center>
     <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>-1</z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -134,10 +131,10 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>-0.01</step>
-        <min>26.0</min>
-        <max>33.0</max>
-        <wrap>false</wrap>
+        <step> -0.01 </step>
+        <min>  26.00 </min>
+        <max>  33.00 </max>
+        <wrap> false </wrap>
       </binding>
     </action>
     <action>
@@ -147,10 +144,10 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>-0.1</step>
-        <min>26.0</min>
-        <max>33.0</max>
-        <wrap>false</wrap>
+        <step> -0.1  </step>
+        <min>  26.0  </min>
+        <max>  33.0  </max>
+        <wrap> false </wrap>
       </binding>
     </action>
   </animation>
@@ -179,10 +176,10 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>0.1</step>
-        <min>26.0</min>
-        <max>33.0</max>
-        <wrap>false</wrap>
+        <step>   0.1 </step>
+        <min>   26.0 </min>
+        <max>   33.0 </max>
+        <wrap> false </wrap>
       </binding>
     </action>
   </animation>

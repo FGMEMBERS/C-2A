@@ -1,6 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <PropertyList>
-    <path>WhiteLight.ac</path>
+    <path>GreenLight.ac</path>
 
     <animation>
         <type>noshadow</type>
@@ -22,7 +23,7 @@
         <type>select</type>
         <object-name>Light</object-name>
         <condition>
-            <property>/sim/model/lights/beacon/state</property>
+            <property>/sim/model/lights/sbc1/state</property>
         </condition>
     </animation>
 
