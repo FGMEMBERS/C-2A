@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- GRUMMAN C 2A : 2008 BARANGER Emmanuel 
+  
+     source       : http://en.wikipedia.org/wiki/Grumman_C-2_Greyhound
 
      wingspan     : 24.69 m
      length       : 17.30 m
@@ -20,26 +22,27 @@
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.3"/>
     <control-setting axis="/controls/engines/engine[1]/mixture" value="0.65"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
-    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
   <cruise speed="251" alt="30000">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/mixture" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
-    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
   <cockpit x="6.700" y="-0.570" z="0.154"/>
 
   <!-- Fuselage -->
-  <fuselage ax="8.641" ay="0" az="-0.850" bx="-3.769" by="0" bz="-0.737" width="2.4" taper="1" midpoint="0"/>
-  <fuselage ax="-3.769" ay="0" az="-0.737" bx="-8.716" by="0" bz="0.510" width="2.4" taper="1" midpoint="0"/>
+  <fuselage ax=" 8.628" ay="0" az="-0.737" bx=" 5.557" by="0" bz="-0.737" width="2.4" taper="0.6" midpoint="1"/>
+  <fuselage ax=" 5.557" ay="0" az="-0.737" bx="-3.769" by="0" bz="-0.737" width="2.4" taper="1.0" midpoint="0"/>
+  <fuselage ax="-3.769" ay="0" az="-0.737" bx="-8.716" by="0" bz=" 0.510" width="2.4" taper="0.6" midpoint="0"/>
 
   <!-- Ailes -->
   <wing x="0.625" y="0.549" z="0.131"
@@ -118,10 +121,7 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
-
-  <!-- Moteur gauche
-                 
-  -->
+  <!-- Moteur gauche -->
   <propeller x="2.743" y="3.169" z="-0.422"
              mass="2994" 
              moment="958.85" 
