@@ -13,6 +13,25 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- Switch Landing Light -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.590 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m>  0.590 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+
   <!-- ai -->
   <model>
     <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ai/ai.xml</path>

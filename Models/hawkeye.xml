@@ -12,9 +12,19 @@
     </offsets>
   </model>
 
+  <!-- Le radome -->
+  <model>
+    <path>Aircraft/C-2A/Models/Radome/radome.xml</path>
+    <offsets>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+    </offsets>
+  </model>
+
   <!-- Immatriculation -->
   <model>
-    <path>Aircraft/C-2A/Models/Immat/immat.xml</path>
+    <path>Aircraft/C-2A/Models/Immat/immat2.xml</path>
     <offsets>
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
@@ -25,7 +35,7 @@
   <!-- Une ombre pour OSG -->
   <model>
     <name>shadowOSG</name>
-    <path>Aircraft/C-2A/Models/shadow.xml</path>
+    <path>Aircraft/C-2A/Models/shadow2.xml</path>
   </model>
 
 </PropertyList>

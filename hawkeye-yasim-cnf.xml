@@ -2,8 +2,8 @@
 
 <!--
      ************************************************************************
-     GRUMMAN C 2A
-     December 2008 BARANGER Emmanuel
+     GRUMMAN E 2C Hawkeye
+     December 2011 BARANGER Emmanuel
      ************************************************************************ 
 -->
 
@@ -11,23 +11,23 @@
 
   <sim>
 
-    <description>Grumman C 2A (YASim)</description>
+    <description>Grumman E 2C Hawkeye (YASim)</description>
     <flight-model>yasim</flight-model>
-    <aero>c-2a-yasim</aero>
+    <aero>hawkeye-yasim</aero>
 
     <startup>
-      <splash-texture>Aircraft/C-2A/Splashs/c-2a-splash.png</splash-texture>
+      <splash-texture>Aircraft/C-2A/Splashs/hawkeye-splash.png</splash-texture>
     </startup>
 
     <model>
-      <path>Aircraft/C-2A/Models/c-2a.xml</path>
+      <path>Aircraft/C-2A/Models/hawkeye.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
     </model>
 
     <help>
-      <title>Northrop Grumman C 2A Greyhound</title>
+      <title>Northrop Grumman E 2C Hawkeye</title>
       <key>
         <name>d</name>
         <desc>Open/Close door</desc>
@@ -49,3 +49,4 @@
   </sim>
     
 </PropertyList>
+

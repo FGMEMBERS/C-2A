@@ -10,52 +10,25 @@
    
     <fuel-fraction>0.8</fuel-fraction>
   
-    <startup>
-      <splash-texture>Aircraft/C-2A/c-2a-splash.png</splash-texture>
-    </startup>
-
-    <model>
-      <path>Aircraft/C-2A/Models/c-2a.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
-
     <sound>
       <path>Aircraft/C-2A/Sounds/c-2a-sound.xml</path>
     </sound>
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int" n="0">0</int>
-        <int type="int" n="1">0</int>
-        <int type="int" n="2">0</int>
-        <int type="int" n="3">0</int>
-        <int type="int" n="4">0</int>
-        <int type="int" n="5">0</int>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
-
-    <help>
-      <title>Northrop Grumman C 2A Greyhound</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close door</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close rear door</desc>
-      </key>
-      <key>
-        <name>o/O</name>
-        <desc>Hook up/down</desc>
-      </key>
-      <key>
-        <name>f</name>
-        <desc>Wings fold</desc>
-      </key>
-    </help>
 
     <menubar include="Dialogs/c-2a-menu.xml"/>
 
@@ -67,30 +40,13 @@
 
   <input>
       <keyboard include="Nasal/c-2a-keyboard.xml"/>
-<!--  <keyboard include="../../Input/Keyboard/carrier-bindings.xml">
-      <key n="100">
-        <name>d</name>
-        <desc>Crew door</desc>
-        <binding>
-          <command>nasal</command>
-          <script>c2a.doorsystem.crewexport();</script>
-        </binding>
-      </key>
-      <key n="68">
-        <name>D</name>
-        <desc>Rear door</desc>
-        <binding>
-          <command>nasal</command>
-          <script>c2a.doorsystem.passengerexport();</script>
-        </binding>
-      </key>
-    </keyboard>
--->
   </input>
  
   <nasal>
-    <c2a>
+    <doors>
       <file>Aircraft/C-2A/Nasal/doors.nas</file>
+    </doors>
+    <c2a>
       <file>Aircraft/C-2A/Nasal/liveries.nas</file>
       <file>Aircraft/C-2A/Nasal/immat.nas</file>
       <file>Aircraft/C-2A/Nasal/light.nas</file>
