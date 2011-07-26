@@ -15,37 +15,6 @@
     <flight-model>yasim</flight-model>
     <aero>c-2a-yasim</aero>
 
-    <startup>
-      <splash-texture>Aircraft/C-2A/Splashs/c-2a-splash.png</splash-texture>
-    </startup>
-
-    <model>
-      <path>Aircraft/C-2A/Models/c-2a.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
-
-    <help>
-      <title>Northrop Grumman C 2A Greyhound</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close door</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close rear door</desc>
-      </key>
-      <key>
-        <name>o/O</name>
-        <desc>Hook up/down</desc>
-      </key>
-      <key>
-        <name>f</name>
-        <desc>Wings fold</desc>
-      </key>
-    </help>
-
   </sim>
     
 </PropertyList>

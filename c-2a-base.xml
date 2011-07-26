@@ -10,6 +10,17 @@
    
     <fuel-fraction>0.8</fuel-fraction>
   
+    <startup>
+      <splash-texture>Aircraft/C-2A/c-2a-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/C-2A/Models/c-2a.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
     <sound>
       <path>Aircraft/C-2A/Sounds/c-2a-sound.xml</path>
     </sound>
@@ -29,6 +40,26 @@
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
+
+    <help>
+      <title>Northrop Grumman C 2A Greyhound</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close rear door</desc>
+      </key>
+      <key>
+        <name>o/O</name>
+        <desc>Hook up/down</desc>
+      </key>
+      <key>
+        <name>f</name>
+        <desc>Wings fold</desc>
+      </key>
+    </help>
 
     <menubar include="Dialogs/c-2a-menu.xml"/>
 
