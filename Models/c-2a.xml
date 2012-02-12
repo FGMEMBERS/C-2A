@@ -231,43 +231,26 @@
   <!-- Immatriculation -->
   <model>
     <path>Aircraft/C-2A/Models/Immat/immat.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/C-2A/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.887 </z-m>
+    </offsets>
   </model>
 
   <!-- Interieur -->
   <model>
     <path>Aircraft/C-2A/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
   </model>
 
   <!-- Immatriculation -->
   <model>
     <path>Aircraft/C-2A/Models/Immat/immat.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
   </model>
 
   <!-- Effets lumineux -->
@@ -579,9 +562,6 @@
       <z> 0 </z>
     </axis>
   </animation>
-      <x-m>  -0.832 </x-m>
-      <y-m> -12.178 </y-m>
-      <z-m>   0.614 </z-m>
 
   <animation>
     <type>rotate</type>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+   Modified by Paolo 
+-->
+<PropertyList>
+
+  <path>APControl.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>Rings</object-name>
+    <object-name>APToggle</object-name>
+    <object-name>HDToggle</object-name>
+    <object-name>ALTToggle</object-name>
+    <object-name>IASToggle</object-name>
+    <object-name>ILSToggle</object-name>
+
+    <object-name>APon</object-name>
+    <object-name>APoff</object-name>
+    <object-name>HDGon</object-name>
+    <object-name>HDGoff</object-name>
+    <object-name>ALTon</object-name>
+    <object-name>ALToff</object-name>
+    <object-name>IASon</object-name>
+    <object-name>IASoff</object-name>
+    <object-name>ILSon</object-name>
+    <object-name>ILSoff</object-name>
+  </animation>
+ 
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>APToggle</object-name>
+    <object-name>HDToggle</object-name>
+    <object-name>ALTToggle</object-name>
+    <object-name>IASToggle</object-name>
+    <object-name>ILSToggle</object-name>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- AP Toggle rotation, if Autopilot is on 	-->
+  <animation>
+		<type>rotate</type>
+    <object-name>APToggle</object-name>
+		<!-- This is a dummy property just to rotate the AP lever -->
+		<property>/controls/autoflight/autopilot/engage</property> 
+    <factor> 60 </factor>  
+    <center>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.003 </z-m>
+    </center>               
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- HDG Toggle rotation, if Head Bug is on 	-->
+  <animation>     
+	  <type>rotate</type>
+    <object-name>HDToggle</object-name>
+		<!-- This is a dummy property just to rotate the HDG lever -->
+		<property>/controls/armament/master-arm</property> 
+    <factor> 60 </factor>  
+    <center>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.003 </z-m>
+    </center>               
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- ALT Toggle rotation, if ALT is on 	-->
+  <animation>      
+    <type>rotate</type>
+    <object-name>ALTToggle</object-name>
+    <!-- This is a dummy property just to rotate the ALT lever -->
+    <property>/controls/armament/release-all</property> 
+    <factor> 60 </factor>  
+    <center>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.003 </z-m>
+    </center>               
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- IAS Toggle rotation, if IAS is on 	-->
+  <animation>      
+    <type>rotate</type>
+    <object-name>IASToggle</object-name>
+    <!-- This is a dummy property just to rotate the IAS lever -->
+    <property>/controls/armament/station[1]/release-all</property> 
+    <factor>60</factor>  
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.003 </z-m>
+    </center>               
+  </animation>
+
+  <!-- ILS Toggle rotation, if ILS is on 	-->
+  <animation>     
+    <type>rotate</type>
+    <object-name>ILSToggle</object-name>
+    <!-- This is a dummy property just to rotate the ILS lever -->
+    <property>/controls/armament/station[2]/release-all</property> 
+    <factor>60</factor>  
+    <center>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.002 </y-m>
+      <z-m> 0.003 </z-m>
+    </center>               
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+  <!-- Actions -->
+  <!-- Insert AP (wing-leveler hold VS): APon -->	
+  <animation>
+    <type>pick</type>
+    <object-name>APon</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/heading/</property>
+        <value type="string">wing-leveler</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/altitude/</property>
+        <value type="string">vertical-speed-hold</value>
+      </binding>
+      <binding> 
+        <!-- This is a dummy binding to rotate the APtoggle lever -->
+        <command>property-assign</command>
+        <property>/controls/autoflight/autopilot/engage</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Switch-off AP -->
+  <animation>
+    <type>pick</type>
+    <object-name>APoff</object-name>
+    <visible>false</visible>       
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/heading/</property>
+        <value type="string"></value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/altitude/</property>
+        <value type="string"></value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/speed/</property>
+        <value type="string"></value>
+      </binding>		
+      <!-- All toggles to off with AP off -->
+      <binding> 
+        <!-- This is a dummy binding to rotate the APtoggle lever -->
+        <command>property-assign</command>
+        <property>/controls/autoflight/autopilot/engage</property>
+        <value type="bool">false</value>
+      </binding>
+      <binding> 
+        <!-- This is a dummy binding to rotate the HDtoggle lever -->
+        <command>property-assign</command>
+        <property>/controls/armament/master-arm</property>
+        <value type="bool">false</value>
+      </binding>
+      <binding> 
+        <!-- This is a dummy binding to rotate the ALTtoggle lever -->
+        <command>property-assign</command>
+        <property>/controls/armament/release-all</property>
+        <value type="bool">false</value>
+      </binding>
+      <binding>
+        <!-- /controls/armament/station[1]/release-all = false per IASToggle -->
+        <command>property-assign</command>
+        <property>/controls/armament/station[1]/release-all</property>
+        <value type="bool">false</value>
+      </binding>
+      <binding>
+        <!-- /controls/armament/station[2]/release-all = false per ILSToggle -->
+        <command>property-assign</command>
+        <property>/controls/armament/station[2]/release-all</property>
+        <value type="bool">false</value>
+      </binding>
+    </action>	
+  </animation>
+
+  <!-- Once AP is ON, Iserts head BUG; HDSwitchON and HDSwitchOFF -->
+  <animation>
+    <type>pick</type>
+    <object-name>HDGon</object-name>
+    <visible>false</visible>   
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/heading/</property>
+        <value type="string">dg-heading-hold</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the toggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/master-arm</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- If AP is ON, return AP wing-leveller -->
+  <animation>
+    <type>pick</type>
+    <object-name>HDGoff</object-name>
+    <visible>false</visible>   
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/heading/</property>
+        <value type="string">wing-leveler</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the toggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/master-arm</property>
+        <value type="bool">false</value>
+      </binding>
+    </action>
+  </animation>
+		
+  <!-- IF AP is ON Switch from VSset to ALTset ; ALTon -->
+  <animation>	
+    <type>pick</type>
+    <object-name>ALTon</object-name>      
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/altitude/</property>
+        <value type="string">altitude-hold</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the toggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/release-all</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- IF AP is ON, Switch from  ALTset to VSset ;  ALToff -->
+  <animation>
+    <type>pick</type>
+    <object-name>ALToff</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/altitude/</property>
+        <value type="string">vertical-speed-hold</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the toggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/release-all</property>
+        <value type="bool">false</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- IF AP is ON, Switch IAS on  -->
+  <animation>
+    <type>pick</type>
+    <object-name>IASon</object-name>      
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/speed/</property>
+        <value type="string">speed-with-throttle</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the IAStoggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/station[1]/release-all</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!--  Switch IAS off  -->
+  <animation>	
+    <type>pick</type>
+    <object-name>IASoff</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <command>property-assign</command>
+        <property>/autopilot/locks/speed/</property>
+        <value type="string"></value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the IAStoggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/station[1]/release-all</property>
+        <value type="bool">false</value>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- IF AP is ON, Switch ILS course and altitude on  -->
+  <animation>
+    <type>pick</type>
+    <object-name>ILSon</object-name>    
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable> 
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/heading/</property>
+        <value type="string">nav1-hold</value>
+      </binding>
+      <binding>
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/autopilot/locks/altitude/</property>
+        <value type="string">gs1-hold</value>
+      </binding>
+      <binding> <!-- This is a dummy binding to rotate the IAStoggle lever -->
+        <condition>
+          <property>/controls/autoflight/autopilot/engage</property>
+        </condition>   
+        <command>property-assign</command>
+        <property>/controls/armament/station[2]/release-all</property>
+        <value type="bool">true</value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>ILSoff</object-name>    
+    <visible>false</visible>
+  </animation>
+
+</PropertyList>
+

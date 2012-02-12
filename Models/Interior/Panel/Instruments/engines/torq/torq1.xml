@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>torqgauge.ac</path>
+
+  <animation>
+    <object-name>TorqueBezel</object-name>
+    <object-name>TorqueFace</object-name>
+    <object-name>Torque.needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>TorqueFace</object-name>
+    <object-name>Torque.needle</object-name>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Torque.needle</object-name>
+    <property>engines/engine[0]/torque-ftlb</property>
+    <interpolation>
+      <entry><ind>     0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 15000 </ind><dep> 167 </dep></entry>
+      <entry><ind> 30000 </ind><dep> 334 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

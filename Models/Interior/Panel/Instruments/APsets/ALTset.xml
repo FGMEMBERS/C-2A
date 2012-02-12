@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+   Modified by Paolo for the HU-16 Albatross 25/03/2011
+-->
+<PropertyList>
+
+  <path>ALTset.ac</path>
+ 
+  <animation>
+    <object-name>AltSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>ALTSETON</object-name>
+    <object-name>SetALT-DT</object-name>
+    <object-name>SetALT-T</object-name>
+    <object-name>SetALT-H</object-name>
+    <object-name>SetALTfixed1</object-name>
+    <object-name>SetALTfixed2</object-name>
+
+    <object-name>ALTSETPLUS</object-name>
+	  <object-name>ALTSETMINUS</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>AltSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>SetALT-DT</object-name>
+    <object-name>SetALT-T</object-name>
+    <object-name>SetALT-H</object-name>
+    <object-name>SetALTfixed1</object-name>
+    <object-name>SetALTfixed2</object-name>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>select</type>
+    <object-name>ALTSETPLUS</object-name>
+	  <object-name>ALTSETMINUS</object-name>
+    <visible>false</visible>
+  </animation>
+  -->
+ 
+  <!-- Check if AP Altitude is set on and light on the green led-->
+  <animation>
+    <type>select</type>
+    <object-name>ALTSETON</object-name>
+    <visible>true</visible>
+    <condition>
+      <equals>
+        <property>/autopilot/locks/altitude</property>
+        <value>altitude-hold</value>
+      </equals>
+    </condition>
+  </animation> 
+
+  <!-- Alt set indicator Hundreds digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetALT-H</object-name>
+    <property>/autopilot/settings/target-altitude-ft</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Alt set indicator Thousands digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetALT-T</object-name>
+    <property>/autopilot/settings/target-altitude-ft</property>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+		
+  <!-- Alt set indicator DecaThousands digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetALT-DT</object-name>
+    <property>/autopilot/settings/target-altitude-ft</property>
+    <factor>0.00001</factor>
+    <step>10000</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Altitude setting increae -->
+  <animation>
+    <type>pick</type>
+    <object-name>ALTSETPLUS</object-name>  
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-altitude-ft</property>
+        <step>100</step>
+        <min>0</min>
+        <max>20000</max>  
+      </binding>
+    </action>
+    <action>
+      <name>large increase</name>
+      <button>1</button>
+      <repeatable>false</repeatable>     
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-altitude-ft</property>
+        <step>1000</step>
+        <min>0</min>
+        <max>20000</max>      
+      </binding>
+    </action>
+  </animation>   
+
+  <!-- Altitude setting decrease -->
+  <animation>
+    <type>pick</type>
+    <object-name>ALTSETMINUS</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>fasle</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-altitude-ft</property>
+        <step>-100</step>
+        <min>0</min>
+        <max>20000</max> 
+      </binding>
+    </action>
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-altitude-ft</property>
+        <step>-1000</step>
+        <min>0</min>
+        <max>20000</max>  
+      </binding>
+    </action>
+  </animation>   
+  <!-- End Altidude setting -->
+
+</PropertyList>
+

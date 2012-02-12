@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-     ************************************************************************
-     GRUMMAN C 2A
-     December 2008 BARANGER Emmanuel
-     ************************************************************************ 
--->
-
 <PropertyList include="c-2a-base.xml">
 
   <sim>
 
     <description>Grumman C 2A (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM) / Paolo ROTA (Panel)</author>
     <flight-model>yasim</flight-model>
     <aero>c-2a-yasim</aero>
 

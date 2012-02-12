@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+    Prepared by Paolo for the Catalina PBY 11/02/17
+-->
+<PropertyList>
+
+ <path>VSset.ac</path>
+
+  <animation>
+    <object-name>VSSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>VSSETON</object-name>
+    <object-name>VSmin</object-name>
+    <object-name>SetVS-T</object-name>
+    <object-name>SetVS-H</object-name>
+    <object-name>SetVSfixed1</object-name>
+    <object-name>SetVSfixed2</object-name>
+
+    <object-name>VSSETMINUS</object-name>
+    <object-name>VSSETPLUS</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>VSSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>VSmin</object-name>
+    <object-name>SetVS-T</object-name>
+    <object-name>SetVS-H</object-name>
+    <object-name>SetVSfixed1</object-name>
+    <object-name>SetVSfixed2</object-name>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- Check if AP Altitude is set on and light on the green led-->
+  <animation>
+    <type>select</type>
+    <object-name>VSSETON</object-name>
+    <visible>true</visible>
+    <condition>
+      <equals>
+        <property>/autopilot/locks/altitude</property>
+        <value>vertical-speed-hold</value>
+      </equals>
+    </condition>
+  </animation> 
+ 
+  <!-- VS minus -->
+  <animation>
+    <type>select</type>
+    <object-name>VSmin</object-name>
+    <condition>           
+      <less-than>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <value>0</value>
+      </less-than>         
+    </condition>
+  </animation>
+
+  <!-- VS set indicator Hundreds digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetVS-H</object-name>
+    <property>/autopilot/settings/vsxxx</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- VS set indicator Thousands digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetVS-T</object-name>
+    <property>/autopilot/settings/vsxxx</property>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!--     VS setting increae    -->
+  <animation>
+    <type>pick</type>
+    <object-name>VSSETPLUS</object-name>
+    <visible>false</visible>
+    <action>
+      <name>increase</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>100</step>
+        <min>-2000</min>
+        <max>2000</max>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>    
+          var vs_set = getprop("autopilot/settings/vertical-speed-fpm");	
+          var vs_displ = abs(vs_set);
+          setprop("autopilot/settings/vsxxx",vs_displ);
+        </script>
+      </binding>
+    </action>
+  </animation>   
+ 
+  <!-- VS setting decrease -->
+  <animation>
+    <type>pick</type>
+    <object-name>VSSETMINUS</object-name>
+    <visible>false</visible> 
+    <action>
+      <name>decrease</name>
+      <button>0</button>    
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>-100</step>
+        <min>-2000</min>
+        <max>2000</max> 
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>    
+          var vs_set = getprop("autopilot/settings/vertical-speed-fpm");	
+          var vs_displ = abs(vs_set);
+          setprop("autopilot/settings/vsxxx",vs_displ);
+        </script>
+      </binding>
+    </action>
+  </animation>   
+<!-- End VS setting -->
+
+</PropertyList>
+

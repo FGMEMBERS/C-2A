@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+   Modified by Paolo for the HU-16 Albatross 25/03/2011
+-->
+<PropertyList>
+
+  <path>IASset.ac</path>
+
+  <animation>
+    <object-name>IASSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>IASSETON</object-name>
+    <object-name>SetIAS-H</object-name>
+    <object-name>SetIAS-D</object-name>
+    <object-name>SetIASFix</object-name>
+
+    <object-name>IASSETPLUS</object-name>
+	  <object-name>IASSETMINUS</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>IASSetFrame2</object-name>
+    <object-name>Button11</object-name>
+    <object-name>SetIAS-H</object-name>
+    <object-name>SetIAS-D</object-name>
+    <object-name>SetIASFix</object-name>
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!--
+  <animation>
+    <type>select</type>
+    <object-name>IASSETPLUS</object-name>
+	  <object-name>IASSETMINUS</object-name>
+    <visible>false</visible>
+  </animation>
+  -->
+ 
+  <!-- Check if AP IAS is set on and light on the green led-->
+  <animation>
+    <type>select</type>
+    <object-name>IASSETON</object-name>
+    <visible>true</visible>
+    <condition>
+      <equals>
+        <property>/autopilot/locks/speed</property>
+        <value>speed-with-throttle</value>
+      </equals>
+    </condition>
+  </animation> 
+
+  <!-- IAS set indicator Deca digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetIAS-D</object-name>
+    <property>/autopilot/settings/target-speed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- IAS set indicator Hundreds digit -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>SetIAS-H</object-name>
+    <property>/autopilot/settings/target-speed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- IAS setting increae -->
+  <animation>
+    <type>pick</type>
+    <object-name>IASSETPLUS</object-name>  
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>10</step>
+        <min>0</min>
+        <max>300</max>
+      </binding>
+    </action> 
+  </animation>
+    
+  <!-- IAS setting decrease -->
+  <animation>
+    <type>pick</type>
+    <object-name>IASSETMINUS</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>-10</step>
+        <min>0</min>
+        <max>300</max>
+      </binding>
+    </action>
+  </animation>
+  <!-- End IAS setting -->
+  
+</PropertyList>
+
