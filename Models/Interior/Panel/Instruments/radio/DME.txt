@@ -1,0 +1,5 @@
+DME properties;
+/instrumentation/dme/in-range = true/false
+/instrumentation/dme/indicated-distance-nm = 94.5 (double)
+/instrumentation/dme/indicated-time-min = 3.5 (double)
+

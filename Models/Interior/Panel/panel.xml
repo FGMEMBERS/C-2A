@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+ 
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Switch Landing Light -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m> -0.075 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m>  0.334 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/divers/landing-lights.xml</path>
+    <offsets>
+      <x-m> -0.075 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m>  0.334 </z-m>
+      <pitch-deg> 45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.460 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m>  0.460 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.460 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.460 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- ASI - air speed indicator -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/asi/asi300.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.570 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/asi/asi300.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.570 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- VSI - vertical speed indicator -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.350 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.350 </y-m>
+      <z-m> -0.172 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- HI - Head indicator -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/rmi/rmi.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.350 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/rmi/rmi.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m>  0.350 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- ILS -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ILS/ILS.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> -0.570 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/ILS/ILS.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m>  0.570 </y-m>
+      <z-m> -0.277 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- ITT  -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/itt/itt1.xml</path>
+    <offsets>
+      <x-m> -0.148 </x-m>
+      <y-m> -0.259 </y-m>
+      <z-m> -0.038 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/itt/itt1.xml</path>
+    <offsets>
+      <x-m> -0.148 </x-m>
+      <y-m>  0.259 </y-m>
+      <z-m> -0.038 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/itt/itt2.xml</path>
+    <offsets>
+      <x-m> -0.148 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.038 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/itt/itt2.xml</path>
+    <offsets>
+      <x-m> -0.148 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.038 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Torque -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/torq/torq1.xml</path>
+    <offsets>
+      <x-m> -0.135 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.092 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/torq/torq1.xml</path>
+    <offsets>
+      <x-m> -0.135 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.092 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>   
+  
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/torq/torq2.xml</path>
+    <offsets>
+      <x-m> -0.135 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.092 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/torq/torq2.xml</path>
+    <offsets>
+      <x-m> -0.135 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.092 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+ 
+  <!-- Propeller RPM -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.146 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.146 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.146 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.146 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- TG Power % --> 
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/trb/n21.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.202 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/trb/n21.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.202 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/trb/n22.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.202 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/trb/n22.xml</path>
+    <offsets>
+      <x-m> -0.112 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.202 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Fuel Flow -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/fflow/fflow1.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/fflow/fflow1.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/fflow/fflow2.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/fflow/fflow2.xml</path>
+    <offsets>
+      <x-m> -0.093 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil Pressur -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/oil/oilp1.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.309 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+   <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/oil/oilp1.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m>  0.264 </y-m>
+      <z-m> -0.309 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+   <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/oil/oilp2.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> -0.309 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -13 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/engines/oil/oilp2.xml</path>
+    <offsets>
+      <x-m> -0.083 </x-m>
+      <y-m>  0.201 </y-m>
+      <z-m> -0.309 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- Altitude setting ALTset pilot-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/ALTset.xml</path>
+    <offsets>
+      <x-m> -0.154 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> -0.020 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- Altitude setting ALTset copilot-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/ALTset.xml</path>
+    <offsets>
+      <x-m> -0.154 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m> -0.020 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- VSetting pilot-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/VSset.xml</path>
+    <offsets>
+      <x-m> -0.154 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.020 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- VSetting copilot-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/VSset.xml</path>
+    <offsets>
+      <x-m> -0.154 </x-m>
+      <y-m>  0.050 </y-m>
+      <z-m> -0.020 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+  
+   <!-- IASetting centered-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/IASset.xml</path>
+    <offsets>
+      <x-m> -0.154 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.020 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+ 
+ <!-- AP switches centered-->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/APsets/APControl.xml</path>
+    <offsets>
+      <x-m> -0.145 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.050 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model> 
+ 
+  <!-- COM1-->
+  <model>
+    <name>COM1</name>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl22/ctl22-com1.xml</path>
+    <offsets>
+      <x-m> -0.134 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> -0.105 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- NAV1-->
+  <model>
+    <name>NAV1</name>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl32/ctl32-nav1.xml</path>
+    <offsets>
+      <x-m> -0.134 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> -0.105 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- NAV2-->
+  <model>
+    <name>NAV1</name>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl32/ctl32-nav2.xml</path>
+    <offsets>
+      <x-m> -0.134 </x-m>
+      <y-m>  0.035 </y-m>
+      <z-m> -0.105 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- COM2-->
+  <model>
+    <name>COM2</name>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl22/ctl22-com2.xml</path>
+    <offsets>
+      <x-m> -0.134 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m> -0.105 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+   
+  <!-- DME-->
+  <model>
+    <name>DME</name>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/dme/dme.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> -0.180 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ADF -->
+  <model> 
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl62/ctl62-adf.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m>  0.035 </y-m>
+      <z-m> -0.180 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Transponder -->
+  <model>       
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/radio/ctl92/ctl92-transponder.xml</path>
+      <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m> -0.180 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+   
+  <!-- TACAN SELECTOR  -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -0.102 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- TACAN DISPLAY  -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/tacan/TACdisplay.xml</path>
+    <offsets>
+      <x-m> -0.102 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m> -0.255 </z-m>
+      <pitch-deg> -13 </pitch-deg>
+    </offsets>
+  </model>
+   
+  <!-- ======================== A10 landing Gear ===================================== -->
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/LGear/gears.xml</path>
+    <offsets>
+    <!--
+      <x-m>  0.039 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m> -0.406 </z-m>
+      <pitch-deg> -82 </pitch-deg>
+    -->
+      <x-m>  0.035 </x-m>
+      <y-m> -0.859 </y-m>
+      <z-m> -0.494 </z-m>
+      <heading-deg> -5 </heading-deg>
+      <pitch-deg>  -98 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ======================== MY BABE :) ===================================== -->
+  <model>      
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/0-yourbabe/babe.ac</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.650 </y-m>
+      <z-m> -0.020 </z-m>
+      <heading-deg> 60 </heading-deg>
+      <pitch-deg>   30 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- ====================== SEATS ============================== -->
+  <model>      
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/seats/seat.ac</path>
+    <offsets>
+      <x-m>  0.500 </x-m>
+      <y-m> -0.450 </y-m>
+      <z-m> -0.940 </z-m>
+      <!-- <heading-deg>-40.0</heading> -->
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/seats/seat.ac</path>
+    <offsets>
+      <x-m>  0.500 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m> -0.940 </z-m>
+      <!-- <heading-deg>-40.0</heading> -->
+    </offsets>
+  </model>
+ 
+  <!-- ======================== YOKE ========================== -->
+  <model>      
+    <path>Aircraft/C-2A/Models/Interior/Panel/Instruments/yoke/stick.xml</path>
+    <offsets>
+      <x-m>  0.095 </x-m>
+      <y-m> -0.452 </y-m>
+      <z-m> -0.718 </z-m>
+    </offsets>
+  </model>   
+  <!-- ============================== END ============================= -->
+  
+</PropertyList>
+

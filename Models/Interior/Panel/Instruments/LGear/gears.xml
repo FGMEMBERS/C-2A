@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<path>gears.ac</path>
+
+  <animation>
+    <object-name>mount</object-name>
+    <object-name>ld-gear-handle</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>override-button</object-name>
+    <object-name>bkg</object-name>
+    <object-name>ring</object-name>
+    <object-name>tems-data-switch</object-name>
+    <object-name>box</object-name>
+    <object-name>anti-skid-button</object-name>
+    <object-name>light-land-switch</object-name>
+    <object-name>l-gear-safe</object-name>
+    <object-name>l-gear-warn</object-name>
+    <object-name>n-gear-safe</object-name>
+    <object-name>n-gear-warn</object-name>
+    <object-name>r-gear-safe</object-name>
+    <object-name>r-gear-warn</object-name>
+  </animation>
+
+	<!-- light-land-switch -->
+	<!-- lighting -->
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>   
+    <object-name>needle</object-name>  
+    <object-name>n-gear-warn</object-name> 
+    <object-name>n-gear-safe</object-name>
+    <object-name>l-gear-warn</object-name> 
+    <object-name>l-gear-safe</object-name>
+    <object-name>r-gear-warn</object-name> 
+    <object-name>r-gear-safe</object-name> 
+    <emission>
+      <red>   0.035 </red>
+      <green> 0.012 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+	
+  <animation>
+    <type>material</type>
+		<object-name>anti-skid-button</object-name>
+    <object-name>mount</object-name>
+		<object-name>ld-gear-handle</object-name>
+    <emission>
+      <red>   0.015 </red>
+      <green> 0.006 </green>
+      <blue>  0.010 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- flaps guauge -->
+  <animation>
+    <name>flaps</name>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/surface-positions/flap-pos-norm</property>
+    <interpolation> 
+      <entry><ind> 0.000 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.333 </ind><dep> 30 </dep></entry>
+      <entry><ind> 0.666 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.0000 </x-m>
+      <y-m> -0.0167 </y-m>
+      <z-m> -0.0314 </z-m>
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- gear warning lights -->
+  <!-- nose -->
+  <animation>
+    <type>select</type>
+    <object-name>n-gear-warn</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>/gear/gear[0]/position-norm</property>
+        <value>0</value>
+        </greater-than>
+          <less-than>
+          <property>/gear/gear[0]/position-norm</property>
+          <value>1</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <!-- left -->
+  <animation>
+    <type>select</type>
+    <object-name>l-gear-warn</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>/gear/gear[1]/position-norm</property>
+        <value>0</value>
+        </greater-than>
+          <less-than>
+          <property>/gear/gear[1]/position-norm</property>
+          <value>1</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <!-- right --> 
+  <animation>
+    <type>select</type>
+    <object-name>r-gear-warn</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>/gear/gear[2]/position-norm</property>
+          <value>0</value>
+        </greater-than>
+        <less-than>
+          <property>/gear/gear[2]/position-norm</property>
+          <value>1</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <!-- gear safe lights -->
+  <!-- nose -->
+  <animation>
+  <type>select</type>
+  <object-name>n-gear-safe</object-name>
+    <condition>	
+      <equals>
+        <property>/gear/gear[0]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- left -->
+  <animation>
+    <type>select</type>
+    <object-name>l-gear-safe</object-name>
+    <condition>
+      <equals>
+        <property>/gear/gear[1]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- right -->
+  <animation>
+    <type>select</type>
+    <object-name>r-gear-safe</object-name>
+    <condition>
+      <equals>
+        <property>/gear/gear[2]/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- ld-gear-handle movemet. -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ld-gear-handle</object-name>
+    <property>/gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 70 </dep></entry>
+    </interpolation>
+    <center>
+      <x>  0.000 </x>
+      <y>  0.036 </y>
+      <z> -0.013 </z>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+	
+  <animation>
+    <type>pick</type>
+    <object-name>ld-gear-handle</object-name>
+    <action>
+      <name>togglegear</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/gear-down</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<PropertyList>
+
+  <path>stick.ac</path>
+	
+  <animation>
+    <object-name>stick</object-name>
+    <object-name>center</object-name>
+    <object-name>guides</object-name>
+    <object-name>support</object-name>
+    <object-name>LeftMidButt</object-name>
+    <object-name>LeftTopButt</object-name>
+    <object-name>LeftLowButt</object-name>
+  </animation>
+
+  <animation>
+    <name>StickComplet</name>
+    <object-name>stick</object-name>
+    <object-name>center</object-name>
+    <object-name>guides</object-name>
+    <object-name>support</object-name>
+    <object-name>LeftMidButt</object-name>
+    <object-name>LeftTopButt</object-name>
+    <object-name>LeftLowButt</object-name>
+  </animation>
+
+  <animation>
+    <name>VolantComplet</name>
+    <object-name>center</object-name>
+    <object-name>guides</object-name>
+    <object-name>support</object-name>
+    <object-name>LeftMidButt</object-name>
+    <object-name>LeftTopButt</object-name>
+    <object-name>LeftLowButt</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>VolantComplet</object-name>
+    <property>surface-positions/aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind> -0.5 </ind><dep> -30 </dep></entry>
+      <entry><ind>  0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  0.5 </ind><dep>  30 </dep></entry>      
+    </interpolation>
+    <center>
+      <x-m> 0.087 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.543 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>StickComplet</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+    <entry><ind> -1 </ind><dep> -15 </dep></entry>
+    <entry><ind>  0 </ind><dep>   0 </dep></entry>
+    <entry><ind>  1 </ind><dep>  15 </dep></entry>      
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>	
+	
+</PropertyList>
+
