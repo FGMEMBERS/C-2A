@@ -1,6 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
-MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 10
 OBJECT poly
@@ -8,8 +7,9 @@ name "Button11"
 loc 0 0 -0
 data 8
 Button11
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 52
 -0.000714 0.028882 0.021098
 -0.000714 0.028517 0.019261
@@ -385,11 +385,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetVS-H"
-loc -0.000813 -0 -0
+loc -0.000813 0 -0
 data 7
 SetVS-H
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010275 -0.003525
 0.010443 0.004052 -0.003525
@@ -406,11 +407,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetVS-T"
-loc -0.000813 -0 -0
+loc -0.000813 0 -0
 data 7
 SetVS-T
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.00418 0.002492
 0.010443 0.010403 0.002492
@@ -427,11 +429,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetVSfixed1"
-loc -0.000813 -0 -0
+loc -0.000813 0 -0
 data 11
 SetVSfixed1
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.003879 -0.004984
 0.010443 0.010102 -0.004984
@@ -448,11 +451,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetVSfixed2"
-loc -0.000813 -0 -0
+loc -0.000813 0 -0
 data 11
 SetVSfixed2
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010102 -0.009784
 0.010443 0.003879 -0.009784
@@ -472,7 +476,7 @@ name "VSSETMINUS"
 loc -0.002087 0 -0
 data 10
 VSSETMINUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011603 0.022256
 0.012 0.011603 0.032256
@@ -480,7 +484,7 @@ numvert 4
 0.012 0.035479 0.022256
 numsurf 1
 SURF 0x10
-mat 1
+mat 0
 refs 4
 0 0.99999922514 0
 3 1 1
@@ -492,8 +496,9 @@ name "VSSETON"
 loc -0.000942 0 -0
 data 7
 VSSETON
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010597 0.016366 -0.003705
 0.010597 0.016366 0.002768
@@ -513,7 +518,7 @@ name "VSSETPLUS"
 loc -0.002087 0 -0
 data 9
 VSSETPLUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011229 0.009229
 0.012 0.011229 0.019229
@@ -521,7 +526,7 @@ numvert 4
 0.012 0.035887 0.009229
 numsurf 1
 SURF 0x10
-mat 1
+mat 0
 refs 4
 0 0.99999922514 0
 3 1 1
@@ -533,8 +538,9 @@ name "VSSetFrame2"
 loc 0 0 -0
 data 11
 VSSetFrame2
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 12
 0.009389 -0.000333 -0.025224
 0.009389 -0.000333 0.024776
@@ -608,11 +614,12 @@ refs 4
 kids 0
 OBJECT poly
 name "VSmin"
-loc -0.000813 -0 -0
+loc -0.000813 0 -0
 data 5
 VSmin
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.00418 0.008482
 0.010443 0.010403 0.008482

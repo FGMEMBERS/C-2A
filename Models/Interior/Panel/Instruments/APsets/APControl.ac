@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 17
 OBJECT poly
@@ -7,8 +7,9 @@ name "ALTToggle"
 loc 0 0 -0
 data 9
 ALTToggle
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.02123 -0.001976 -0.000082
 0.020154 0.000722 -0.000082
@@ -138,7 +139,7 @@ name "ALToff"
 loc 0 0 -0
 data 6
 ALToff
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 -0.009183 -0.009901
 0.010249 -0.009183 0.010099
@@ -158,7 +159,7 @@ name "ALTon"
 loc 0 0 -0
 data 5
 ALTon
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 0.004796 -0.009901
 0.010249 0.004796 0.010099
@@ -178,8 +179,9 @@ name "APToggle"
 loc 0 0 -0
 data 8
 APToggle
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.02123 -0.001976 0.079918
 0.020154 0.000722 0.079918
@@ -309,7 +311,7 @@ name "APoff"
 loc 0 0 -0
 data 5
 APoff
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 -0.009183 0.070099
 0.010249 -0.009183 0.090099
@@ -329,7 +331,7 @@ name "APon"
 loc 0 0 -0
 data 4
 APon
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 0.004796 0.070099
 0.010249 0.004796 0.090099
@@ -349,7 +351,7 @@ name "HDGoff"
 loc 0 0 -0
 data 6
 HDGoff
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 -0.009183 0.030099
 0.010249 -0.009183 0.050099
@@ -369,7 +371,7 @@ name "HDGon"
 loc 0 0 -0
 data 5
 HDGon
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 0.004796 0.030099
 0.010249 0.004796 0.050099
@@ -389,8 +391,9 @@ name "HDToggle"
 loc 0 0 -0
 data 8
 HDToggle
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.02123 -0.001976 0.039918
 0.020154 0.000722 0.039918
@@ -520,8 +523,9 @@ name "IASToggle"
 loc 0 0 -0
 data 9
 IASToggle
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.02123 -0.001976 -0.040082
 0.020154 0.000722 -0.040082
@@ -651,7 +655,7 @@ name "IASoff"
 loc 0 0 -0
 data 6
 IASoff
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 -0.009183 -0.049901
 0.010249 -0.009183 -0.029901
@@ -671,7 +675,7 @@ name "IASon"
 loc 0 0 -0
 data 5
 IASon
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 0.004796 -0.049901
 0.010249 0.004796 -0.029901
@@ -691,8 +695,9 @@ name "ILSToggle"
 loc 0 0 -0
 data 9
 ILSToggle
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.02123 -0.001976 -0.080082
 0.020154 0.000722 -0.080082
@@ -822,7 +827,7 @@ name "ILSoff"
 loc 0 0 -0
 data 6
 ILSoff
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 -0.009183 -0.089901
 0.010249 -0.009183 -0.069901
@@ -842,7 +847,7 @@ name "ILSon"
 loc 0 0 -0
 data 5
 ILSon
-texrep 1 1
+crease 180.000005
 numvert 4
 0.010249 0.004796 -0.089901
 0.010249 0.004796 -0.069901
@@ -862,8 +867,9 @@ name "Rings"
 loc 0 0 -0
 data 5
 Rings
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 120
 0.007504 0.003766 -0.000685
 0.007518 0.003198 -0.000921
@@ -1552,8 +1558,9 @@ name "base"
 loc 0 0 -0
 data 4
 base
-texture "../../../../../../../../../colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.005 -0.013076 -0.095
 0.005 -0.013076 0.095463

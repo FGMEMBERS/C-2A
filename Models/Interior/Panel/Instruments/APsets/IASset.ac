@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 8
 OBJECT poly
@@ -7,8 +7,9 @@ name "Button11"
 loc 0 0 -0
 data 8
 Button11
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 52
 -0.000714 0.028882 0.021098
 -0.000714 0.028517 0.019261
@@ -387,7 +388,7 @@ name "IASSETMINUS"
 loc -0.002078 0 -0
 data 11
 IASSETMINUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011603 0.022256
 0.012 0.011603 0.032256
@@ -407,8 +408,9 @@ name "IASSETON"
 loc -0.0009 0 -0
 data 8
 IASSETON
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010597 0.016366 -0.003705
 0.010597 0.016366 0.002768
@@ -428,7 +430,7 @@ name "IASSETPLUS"
 loc -0.002078 0 -0
 data 10
 IASSETPLUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011229 0.009229
 0.012 0.011229 0.019229
@@ -448,8 +450,9 @@ name "IASSetFrame2"
 loc 0 0 -0
 data 12
 IASSetFrame2
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 12
 0.009389 -0.000333 -0.025224
 0.009389 -0.000333 0.024776
@@ -523,11 +526,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetIAS-D"
-loc -0.000682 -0 -0
+loc -0.000682 0 -0
 data 8
 SetIAS-D
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.00418 -0.002126
 0.010443 0.010403 -0.002126
@@ -544,11 +548,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetIAS-H"
-loc -0.000682 -0 -0
+loc -0.000682 0 -0
 data 8
 SetIAS-H
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010275 0.009702
 0.010443 0.004052 0.009702
@@ -565,11 +570,12 @@ refs 4
 kids 0
 OBJECT poly
 name "SetIASFix"
-loc -0.000682 -0 -0
+loc -0.000682 0 -0
 data 9
 SetIASFix
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010275 -0.009444
 0.010443 0.004052 -0.009444

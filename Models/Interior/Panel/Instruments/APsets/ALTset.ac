@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 10
 OBJECT poly
@@ -7,7 +7,7 @@ name "ALTSETMINUS"
 loc -0.002163 0 -0
 data 11
 ALTSETMINUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011603 0.022256
 0.012 0.011603 0.032256
@@ -19,7 +19,7 @@ mat 0
 refs 4
 0 1 0
 3 1 1
-2 0.000001043281 1
+2 0 1
 1 0 0
 kids 0
 OBJECT poly
@@ -27,8 +27,9 @@ name "ALTSETON"
 loc 0 0 -0
 data 8
 ALTSETON
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.009498 0.016366 -0.003705
 0.009498 0.016366 0.002768
@@ -48,7 +49,7 @@ name "ALTSETPLUS"
 loc -0.002163 0 -0
 data 10
 ALTSETPLUS
-texrep 1 1
+crease 180.000005
 numvert 4
 0.012 0.011229 0.009229
 0.012 0.011229 0.019229
@@ -58,7 +59,7 @@ numsurf 1
 SURF 0x10
 mat 0
 refs 4
-0 0.999999463558 0
+0 1 0
 3 1 1
 2 0 1
 1 0 0
@@ -68,8 +69,9 @@ name "AltSetFrame2"
 loc 0 0 -0
 data 12
 AltSetFrame2
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 12
 0.009389 -0.000333 -0.025224
 0.009389 -0.000333 0.024776
@@ -146,8 +148,9 @@ name "Button11"
 loc 0 0 -0
 data 8
 Button11
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 52
 -0.000714 0.028882 0.021098
 -0.000714 0.028517 0.019261
@@ -526,8 +529,9 @@ name "SetALT-DT"
 loc -0.000894 0 -0
 data 9
 SetALT-DT
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010275 0.009702
 0.010443 0.004052 0.009702
@@ -547,8 +551,9 @@ name "SetALT-H"
 loc -0.000894 0 -0
 data 8
 SetALT-H
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.010275 -0.005023
 0.010443 0.004052 -0.005023
@@ -568,8 +573,9 @@ name "SetALT-T"
 loc -0.000894 0 -0
 data 8
 SetALT-T
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.00418 0.000994
 0.010443 0.010403 0.000994
@@ -589,8 +595,9 @@ name "SetALTfixed1"
 loc -0.000894 0 -0
 data 12
 SetALTfixed1
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.003712 -0.004984
 0.010443 0.009935 -0.004984
@@ -610,8 +617,9 @@ name "SetALTfixed2"
 loc -0.000894 0 -0
 data 12
 SetALTfixed2
-texture "colors.png"
-texrep 1 1
+texture "APsets.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.010443 0.009935 -0.009784
 0.010443 0.003712 -0.009784

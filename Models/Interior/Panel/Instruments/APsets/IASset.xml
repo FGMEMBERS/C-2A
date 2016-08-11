@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<!--
-   Modified by Paolo for the HU-16 Albatross 25/03/2011
--->
+<!-- Modified by Paolo for the HU-16 Albatross 25/03/2011 -->
 <PropertyList>
 
   <path>IASset.ac</path>
@@ -16,7 +14,7 @@
     <object-name>SetIASFix</object-name>
 
     <object-name>IASSETPLUS</object-name>
-	  <object-name>IASSETMINUS</object-name>
+    <object-name>IASSETMINUS</object-name>
   </animation>
 
   <animation>
@@ -27,22 +25,13 @@
     <object-name>SetIAS-D</object-name>
     <object-name>SetIASFix</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
-  <!--
-  <animation>
-    <type>select</type>
-    <object-name>IASSETPLUS</object-name>
-	  <object-name>IASSETMINUS</object-name>
-    <visible>false</visible>
-  </animation>
-  -->
- 
   <!-- Check if AP IAS is set on and light on the green led-->
   <animation>
     <type>select</type>
@@ -126,4 +115,3 @@
   <!-- End IAS setting -->
   
 </PropertyList>
-

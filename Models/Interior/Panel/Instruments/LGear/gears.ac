@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 17
 OBJECT poly
@@ -8,7 +8,8 @@ loc 0 0 -0
 data 16
 anti-skid-button
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.002268 0.065447 0.012353
 0.001634 0.063795 0.013114
@@ -139,7 +140,8 @@ loc 0 0 -0
 data 3
 bkg
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.005511 0.014651 -0.020519
 -0.005511 0.014651 -0.044592
@@ -160,7 +162,8 @@ loc 0 0 -0
 data 3
 box
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.002959 0.050164 -0.006098
 0.024945 0.052116 -0.004995
@@ -213,7 +216,8 @@ loc 0 0 -0
 data 4
 face
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 29
 0.003269 -0.031727 0.042704
 0.003269 -0.020367 0.040101
@@ -434,7 +438,8 @@ loc 0 0 -0
 data 11
 l-gear-safe
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.02024 0.023969
 0.00356 0.02024 0.036154
@@ -487,7 +492,8 @@ loc 0 0 -0
 data 11
 l-gear-warn
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.020294 0.023969
 0.00356 0.020294 0.036154
@@ -540,7 +546,8 @@ loc 0 0 -0
 data 14
 ld-gear-handle
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 161
 0.084959 0.040346 -0.048154
 0.081436 0.03868 -0.04706
@@ -1781,7 +1788,8 @@ loc 0 0 -0
 data 17
 light-land-switch
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 97
 0.026006 0.065095 -0.015038
 0.025397 0.064002 -0.017137
@@ -2423,7 +2431,8 @@ loc 0 0 -0
 data 5
 mount
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 92
 0 0.092092 0.02288
 -0 -0.1329 -0.05372
@@ -3233,7 +3242,8 @@ loc 0 0 -0
 data 11
 n-gear-safe
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.007402 0.011132
 0.00356 0.007402 0.023915
@@ -3286,7 +3296,8 @@ loc 0 0 -0
 data 11
 n-gear-warn
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.038517 0.011132
 0.00356 0.038517 0.023915
@@ -3339,7 +3350,8 @@ loc -0.00197 -0 -0
 data 6
 needle
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.005582 -0.033603 0.010534
 0.005582 -0.032577 -0.00351
@@ -3392,7 +3404,8 @@ loc 0 0 -0
 data 15
 override-button
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.014678 0.014369 -0.029293
 0.014678 0.015794 -0.032634
@@ -3523,7 +3536,8 @@ loc 0 0 -0
 data 11
 r-gear-safe
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.020077 -0.00176
 0.00356 0.020077 0.010588
@@ -3576,7 +3590,8 @@ loc 0 0 -0
 data 11
 r-gear-warn
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 0.00356 0.020131 -0.00176
 0.00356 0.020131 0.010642
@@ -3629,7 +3644,8 @@ loc 0 0 -0
 data 4
 ring
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 36
 0.003435 -0.114924 0.023107
 0.003435 -0.119477 0.018608
@@ -3843,7 +3859,8 @@ loc 0 0 -0
 data 16
 tems-data-switch
 texture "gears.png"
-texrep 1 1
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 17
 0.011292 -0.10877 0.012562
 0.001774 -0.10877 0.016971

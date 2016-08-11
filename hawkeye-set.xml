@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/c-2a-base.xml">
+
+  <sim>
+    <description>Grumman E 2C Hawkeye (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM) / Paolo ROTA (Panel)</author>
+    
+    <flight-model>yasim</flight-model>
+    <aero>Systems/hawkeye-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+    <startup>
+      <splash-texture>Aircraft/C-2A/Splashs/hawkeye-splash.png</splash-texture>
+    </startup>
+    
+    <model>
+      <path>Aircraft/C-2A/Models/hawkeye.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
+    <help include="Systems/hawkeye-help.xml"/>
+    
+  </sim>
+
+</PropertyList>
+

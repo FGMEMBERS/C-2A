@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -18,41 +18,25 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/C-2A/Models/Effects/glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>Face</object-name>
+    <object-name>disk</object-name>
     <object-name>inhg</object-name>
     <object-name>Needle10000</object-name>
     <object-name>Needle1000</object-name>
     <object-name>Needle100</object-name>
     <emission>
-      <red>   0.030 </red>
-      <green> 0.015 </green>
-      <blue>  0.005 </blue>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>disk</object-name>
-    <emission>
-      <red>   0.45000 </red>
-      <green> 0.09000 </green>
-      <blue>  0.00001 </blue>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -60,7 +44,7 @@
     <type>rotate</type>
     <object-name>Needle100</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.36</factor>
+    <factor> 0.36 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -72,7 +56,7 @@
     <type>rotate</type>
     <object-name>Needle1000</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.036</factor>
+    <factor> 0.036 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -84,7 +68,7 @@
     <type>rotate</type>
     <object-name>Needle10000</object-name>
     <property>/instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.0036</factor>
+    <factor> 0.0036 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -97,16 +81,16 @@
     <object-name>inhg</object-name>
     <property>/instrumentation/altimeter/setting-inhg</property>
     <interpolation>
-      <entry><ind> 27.90 </ind><dep>   0.00 </dep></entry>
-      <entry><ind> 28.00 </ind><dep>   9.35 </dep></entry>
-      <entry><ind> 28.50 </ind><dep>  59.00 </dep></entry>
-      <entry><ind> 29.00 </ind><dep> 109.00 </dep></entry>
-      <entry><ind> 29.50 </ind><dep> 159.50 </dep></entry>
-      <entry><ind> 29.90 </ind><dep> 200.00 </dep></entry>
-      <entry><ind> 30.00 </ind><dep> 210.00 </dep></entry>
-      <entry><ind> 30.50 </ind><dep> 261.00 </dep></entry>
-      <entry><ind> 31.00 </ind><dep> 310.00 </dep></entry>
-      <entry><ind> 31.40 </ind><dep> 350.00 </dep></entry>
+      <entry><ind> 27.9 </ind><dep>   0.00 </dep></entry>
+      <entry><ind> 28.0 </ind><dep>   9.35 </dep></entry>
+      <entry><ind> 28.5 </ind><dep>  59.00 </dep></entry>
+      <entry><ind> 29.0 </ind><dep> 109.00 </dep></entry>
+      <entry><ind> 29.5 </ind><dep> 159.50 </dep></entry>
+      <entry><ind> 29.9 </ind><dep> 200.00 </dep></entry>
+      <entry><ind> 30.0 </ind><dep> 210.00 </dep></entry>
+      <entry><ind> 30.5 </ind><dep> 261.00 </dep></entry>
+      <entry><ind> 31.0 </ind><dep> 310.00 </dep></entry>
+      <entry><ind> 31.4 </ind><dep> 350.00 </dep></entry>
      </interpolation>
     <center>
       <x> 0.25 </x>
@@ -185,5 +169,3 @@
   </animation>
 
 </PropertyList>
-
-

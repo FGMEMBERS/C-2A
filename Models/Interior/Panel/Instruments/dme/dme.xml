@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <PropertyList>
-
+  
   <path>dme.ac</path>
-
+  
   <animation>
     <object-name>base</object-name>
     <object-name>rings</object-name>
@@ -25,51 +23,51 @@
     <object-name>MINunits</object-name>
     <object-name>ONOFFToggle</object-name>
     <object-name>NAVToggle</object-name>
-
+    
     <object-name>ON</object-name>
     <object-name>OFF</object-name>
     <object-name>NAV1</object-name>
     <object-name>NAV2</object-name>
   </animation>
-	
+  
   <animation>
     <type>material</type>
     <object-name>KNOFF</object-name>
     <object-name>KNdecas</object-name>
-		<object-name>KNhdrs</object-name>
-		<object-name>KNunits</object-name>
-		<object-name>MINOFF</object-name>
-		<object-name>MINdecas</object-name>
-		<object-name>MINhdrs</object-name>
-		<object-name>MINunits</object-name>
-		<object-name>NAV1ON</object-name>
-		<object-name>NAV2ON</object-name>
-		<object-name>NMdecas</object-name>
-		<object-name>NMhdrs</object-name>
-		<object-name>NMdecimal</object-name>
-		<object-name>NMunits</object-name>
-		<object-name>inrange</object-name>
+    <object-name>KNhdrs</object-name>
+    <object-name>KNunits</object-name>
+    <object-name>MINOFF</object-name>
+    <object-name>MINdecas</object-name>
+    <object-name>MINhdrs</object-name>
+    <object-name>MINunits</object-name>
+    <object-name>NAV1ON</object-name>
+    <object-name>NAV2ON</object-name>
+    <object-name>NMdecas</object-name>
+    <object-name>NMhdrs</object-name>
+    <object-name>NMdecimal</object-name>
+    <object-name>NMunits</object-name>
+    <object-name>inrange</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-	
-	<animation>
+  
+  <animation>
     <type>material</type>
     <object-name>base</object-name>
     <object-name>NAVToggle</object-name>
     <object-name>ONOFFToggle</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.015 </red>
       <green> 0.006 </green>
       <blue>  0.010 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-	
+  
   <!-- CHECK if the Main ON/OFF switch is on -->
   <animation>
     <type>select</type>
@@ -91,12 +89,12 @@
       </equals>
     </condition>
   </animation>
-
-  <!-- ON/OFF Toggle rotation 	-->
+  
+  <!-- ON/OFF Toggle rotation   -->
   <animation>    
     <type>rotate</type>
     <object-name>ONOFFToggle</object-name>
-    <!-- property set by 		ON = true and OFF = false hotspots -->
+    <!-- property set by    ON = true and OFF = false hotspots -->
     <property>/instrumentation/dme/serviceable</property> 
     <factor> 60 </factor>  
     <center>
@@ -110,9 +108,9 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <!-- ACTIONS -->
-  <!-- DISTANCE INDICATOR -->	
+  <!-- DISTANCE INDICATOR --> 
   <!-- Nm Distance - decimals -->
   <animation>
     <type>textranslate</type>
@@ -126,8 +124,8 @@
       <y> 1 </y>
       <z> 0 </z>
     </axis>
-  </animation>	
-
+  </animation>  
+  
   <!-- Nm Distance - UNITS -->
   <animation>
     <type>textranslate</type>
@@ -142,7 +140,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Nm Distance - Deca's -->
   <animation>
     <type>textranslate</type>
@@ -157,7 +155,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Nm Distance - Hundred's -->
   <animation>
     <type>textranslate</type>
@@ -172,8 +170,8 @@
       <z> 0 </z>
     </axis>
   </animation>
-
-  <!-- KNOTS INDICATOR -->	
+  
+  <!-- KNOTS INDICATOR -->  
   <!-- Knots - UNITS -->
   <animation>
     <type>textranslate</type>
@@ -188,7 +186,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Knots - Deca's -->
   <animation>
     <type>textranslate</type>
@@ -203,7 +201,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Knots - Hundred's -->
   <animation>
     <type>textranslate</type>
@@ -218,8 +216,8 @@
       <z> 0 </z>
     </axis>
   </animation>
-		
-  <!-- TIME TO INDICATOR -->	
+  
+  <!-- TIME TO INDICATOR -->  
   <!-- Time - UNITS -->
   <animation>
     <type>textranslate</type>
@@ -234,7 +232,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- TIME - Deca's -->
   <animation>
     <type>textranslate</type>
@@ -249,7 +247,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- TIME - Hundred's -->
   <animation>
     <type>textranslate</type>
@@ -264,7 +262,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Check if DME is in range-->
   <animation>
     <type>select</type>
@@ -277,24 +275,23 @@
       </equals>
     </condition>
   </animation>
- 
+  
   <!-- Check if NAV1 is on and show the corresponding flag NAV1ON -->
   <animation>
     <type>select</type>
     <object-name>NAV1ON</object-name>
     <visible>true</visible> 
- 		<condition>
+    <condition>
       <equals>
         <property>/instrumentation/dme/switch-position</property>
         <value>1</value>
       </equals>
     </condition>
   </animation>
- 
-
+  
   <!-- Check if NAV2 is on and show the corresponding flag NAV2ON --> 
   <animation>
-		<type>select</type>
+    <type>select</type>
     <object-name>NAV2ON</object-name>
     <visible>true</visible>
     <condition>
@@ -304,15 +301,14 @@
       </equals>
     </condition>
   </animation>
- 
-
+  
   <!-- IF /instrumentation/dme/switch-min-kts = knots, KNOTSON and digits are visible -->
   <animation>
-		<type>select</type>
+    <type>select</type>
     <object-name>KNOFF</object-name>
-		<object-name>KNhdrs</object-name>
-		<object-name>KNdecas</object-name>
-		<object-name>KNunits</object-name>
+    <object-name>KNhdrs</object-name>
+    <object-name>KNdecas</object-name>
+    <object-name>KNunits</object-name>
     <visible>true</visible>
     <condition>
       <equals>
@@ -321,14 +317,14 @@
       </equals>
     </condition>
   </animation>
-
+  
   <!-- IF /instrumentation/dme/switch-min-kts = minutes, MINOFF and MINdigits are visible -->
   <animation>
-		<type>select</type>
+    <type>select</type>
     <object-name>MINOFF</object-name>
-		<object-name>MINhdrs</object-name>
-		<object-name>MINdecas</object-name>
-		<object-name>MINunits</object-name>
+    <object-name>MINhdrs</object-name>
+    <object-name>MINdecas</object-name>
+    <object-name>MINunits</object-name>
     <visible>true</visible>
     <condition>
       <equals>
@@ -336,14 +332,14 @@
         <value>minutes</value>
       </equals>
     </condition>
- </animation> 
-
-  <!-- NAV1/NAV2 Toggle rotation 	-->
+  </animation> 
+  
+  <!-- NAV1/NAV2 Toggle rotation  -->
   <animation>    
-	  <type>rotate</type>
+    <type>rotate</type>
     <object-name>NAVToggle</object-name>
-	  <!-- property set by 		NAV1 = 0 and NAV2 = 1 hotspots -->
-	  <property>/instrumentation/dme/switch-position</property> 
+    <!-- property set by    NAV1 = 0 and NAV2 = 1 hotspots -->
+    <property>/instrumentation/dme/switch-position</property> 
     <factor> 60 </factor>  
     <axis>
       <x>  0 </x>
@@ -356,30 +352,30 @@
       <z-m> -0.020 </z-m>
     </center>               
   </animation>
-
+  
   <!-- ACTIONS -->
-  <!-- NAV2 htspot; set /instrumentation/dme/switch-position = 0 -->	
+  <!-- NAV2 htspot; set /instrumentation/dme/switch-position = 0 -->  
   <animation>
     <type>pick</type>
     <object-name>NAV2</object-name>
     <visible>false</visible>
-	  <action>
+    <action>
       <button>0</button>
-      <repeatable>false</repeatable> 	
-		  <binding>
+      <repeatable>false</repeatable>  
+      <binding>
         <command>property-assign</command>
         <property>/instrumentation/dme/switch-position</property>
         <value type="int">0</value>
       </binding>
-		  <binding>
+      <binding>
         <command>property-assign</command>
         <property>/instrumentation/dme/frequencies/source</property>
         <value type="string">/instrumentation/nav[1]/frequencies/selected-mhz</value>
       </binding>
-	  </action>
+    </action>
   </animation>
-
-  <!-- NAV1 htspot; set /instrumentation/dme/switch-position = 1 -->	
+  
+  <!-- NAV1 htspot; set /instrumentation/dme/switch-position = 1 -->  
   <animation>
     <type>pick</type>
     <object-name>NAV1</object-name>    
@@ -392,82 +388,81 @@
         <property>/instrumentation/dme/switch-position</property>
         <value type="int">1</value>
       </binding>
-		  <binding>
+      <binding>
         <command>property-assign</command>
         <property>/instrumentation/dme/frequencies/source</property>
         <value type="string">/instrumentation/nav[0]/frequencies/selected-mhz</value>
       </binding> 
-	  </action>	
-  </animation>	
+    </action> 
+  </animation>  
   
   <!--SETS  /instrumentation/dme/switch-min-kts = knots-->
   <animation>
-  	<type>pick</type>
+    <type>pick</type>
     <object-name>MINOFF</object-name>
     <visible>false</visible>
-  	<action>
+    <action>
       <button>0</button>
       <repeatable>false</repeatable> 
-	  	<binding>
-	  	  <command>property-assign</command>
+      <binding>
+        <command>property-assign</command>
         <property>/instrumentation/dme/switch-min-kts</property>
-        <value type="string">knots</value>	
-	    </binding>
-	  </action>	
+        <value type="string">knots</value>  
+      </binding>
+    </action> 
   </animation>
-
+  
   <!--SETS  /instrumentation/dme/switch-min-kts = minutes-->
   <animation>
-  	<type>pick</type>
+    <type>pick</type>
     <object-name>KNOFF</object-name>
     <visible>false</visible>
-  	<action>
-	    <button>0</button>
+    <action>
+      <button>0</button>
       <repeatable>false</repeatable> 
-	  	<binding>
-	  	  <command>property-assign</command>
+      <binding>
+        <command>property-assign</command>
         <property>/instrumentation/dme/switch-min-kts</property>
-        <value type="string">minutes</value>	
-	    </binding>
-	  </action>	
-  </animation>	
- 
+        <value type="string">minutes</value>  
+      </binding>
+    </action> 
+  </animation>  
+  
   <!--ON hotspot-->
   <animation>
-  	<type>pick</type>
+    <type>pick</type>
     <object-name>ON</object-name>
     <visible>false</visible>
-  	<action>
-	    <button>0</button>
+    <action>
+      <button>0</button>
       <repeatable>false</repeatable> 
-	  	<binding>
-	   	  <command>property-assign</command>
+      <binding>
+        <command>property-assign</command>
         <property>/instrumentation/dme/switch-min-kts</property>
-        <value type="string">knots</value>	
-	    </binding>
-	    <binding>
-	  	  <command>property-assign</command>
+        <value type="string">knots</value>  
+      </binding>
+      <binding>
+        <command>property-assign</command>
         <property>/instrumentation/dme/serviceable</property>
-        <value type="bool">true</value>	
-	    </binding>
-	  </action>	
-  </animation>		   
-
+        <value type="bool">true</value> 
+      </binding>
+    </action> 
+  </animation>       
+  
   <!--OFF hotspot-->
   <animation>
     <type>pick</type>
     <object-name>OFF</object-name>
     <visible>false</visible>
-  	<action>
-	    <button>0</button>
+    <action>
+      <button>0</button>
       <repeatable>false</repeatable> 
       <binding>
-	  	  <command>property-assign</command>
+        <command>property-assign</command>
         <property>/instrumentation/dme/serviceable</property>
-        <value type="bool">false</value>	
-	    </binding>
-    </action>	
-  </animation>	
-   
+        <value type="bool">false</value>  
+      </binding>
+    </action> 
+  </animation>  
+  
 </PropertyList>
-
