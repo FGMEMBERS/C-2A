@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Northrop Grumman E 2C Hawkeye</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close door</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close rear door</desc>
+  </key>
+  <key>
+    <name>o/O</name>
+    <desc>Hook up/down</desc>
+  </key>
+  <key>
+    <name>f</name>
+    <desc>Wings fold</desc>
+  </key>
+  
+</PropertyList>
