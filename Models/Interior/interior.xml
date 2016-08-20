@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -7,26 +7,24 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
-    <object-name>tour</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttrous</object-name>
     <object-name>cloison</object-name>
     <object-name>planchet</object-name>
-
+    <object-name>intporte</object-name>
+    <object-name>intbaie1</object-name>
+    <object-name>intbaie2</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/C-2A/Models/Pilot/pilot.xml</path>
@@ -47,5 +45,118 @@
     </offsets>
   </model>
 
+  <!-- ====================== SEATS ============================== -->
+  <model>      
+    <path>Aircraft/C-2A/Models/Interior/seats/seat.ac</path>
+    <offsets>
+      <x-m> -6.574 </x-m>
+      <y-m> -0.450 </y-m>
+      <z-m> -0.901 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C-2A/Models/Interior/seats/seat.ac</path>
+    <offsets>
+      <x-m> -6.574 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m> -0.901 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Porte équipage avant -->
+  <animation>
+    <type>pick</type>
+    <object-name>intporte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporte</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 150 </factor>
+    <center>
+      <x-m> -5.367 </x-m>
+      <y-m> -1.190 </y-m>
+      <z-m> -1.406 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Baie arrière -->
+  <animation>
+    <type>pick</type>
+    <object-name>intbaie1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaie1</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 40 </factor>
+    <center>
+      <x-m>  5.245 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.487 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>intbaie2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaie2</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  8.315 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.037 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
-

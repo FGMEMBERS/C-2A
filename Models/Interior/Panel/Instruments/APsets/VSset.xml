@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<!--
-    Prepared by Paolo for the Catalina PBY 11/02/17
--->
+<!-- Prepared by Paolo for the Catalina PBY 11/02/17 -->
 <PropertyList>
 
- <path>VSset.ac</path>
+  <path>VSset.ac</path>
 
   <animation>
     <object-name>VSSetFrame2</object-name>
@@ -31,10 +29,10 @@
     <object-name>SetVSfixed1</object-name>
     <object-name>SetVSfixed2</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -146,7 +144,6 @@
       </binding>
     </action>
   </animation>   
-<!-- End VS setting -->
+  <!-- End VS setting -->
 
 </PropertyList>
-

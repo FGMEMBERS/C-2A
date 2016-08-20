@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-    <path>trbgauge.ac</path>
-
+  
+  <path>trbgauge.ac</path>
+  
   <animation>
     <object-name>TRBezel</object-name>
     <object-name>TRFace</object-name>
@@ -12,34 +12,28 @@
     <object-name>trb.2</object-name>
     <object-name>trb.3</object-name>
     <object-name>trb.4</object-name>
-
+    
     <object-name>vitre</object-name>
   </animation>
-
-  <animation>
-    <type>noshadow</type>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/C-2A/Models/Effects/glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>TRFace</object-name>
     <object-name>TR.needle</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>trb.1</object-name>
@@ -59,8 +53,8 @@
     <object-name>TR.needle</object-name>
     <property>engines/engine[0]/n2</property>
     <interpolation>
-      <entry><ind>0.0</ind><dep>0.0</dep></entry>
-      <entry><ind>110.0</ind><dep>248.0</dep></entry>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 110 </ind><dep> 248 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -73,8 +67,8 @@
     <type>textranslate</type>
     <object-name>trb.1</object-name>
     <property>engines/engine[1]/n2</property>
-    <factor>0.001</factor>
-    <step>100</step>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -86,8 +80,8 @@
     <type>textranslate</type>
     <object-name>trb.2</object-name>
     <property>engines/engine[1]/n2</property>
-    <factor>0.01</factor>
-    <step>10</step>
+    <factor> 0.01 </factor>
+    <step> 10 </step>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -99,8 +93,8 @@
     <type>textranslate</type>
     <object-name>trb.3</object-name>
     <property>engines/engine[1]/n2</property>
-    <factor>0.1</factor>
-    <step>1</step>
+    <factor> 0.1 </factor>
+    <step> 1 </step>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -112,8 +106,8 @@
     <type>textranslate</type>
     <object-name>trb.4</object-name>
     <property>engines/engine[1]/n2</property>
-    <factor>1.0</factor>
-    <step>0.1</step>
+    <factor> 1.0 </factor>
+    <step> 0.1 </step>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -122,4 +116,3 @@
   </animation>
 
 </PropertyList>
-

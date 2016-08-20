@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<!--
-   Modified by Paolo for the HU-16 Albatross 25/03/2011
--->
+<!-- Modified by Paolo for the HU-16 Albatross 25/03/2011 -->
 <PropertyList>
 
   <path>ALTset.ac</path>
@@ -18,7 +16,7 @@
     <object-name>SetALTfixed2</object-name>
 
     <object-name>ALTSETPLUS</object-name>
-	  <object-name>ALTSETMINUS</object-name>
+    <object-name>ALTSETMINUS</object-name>
   </animation>
 
   <animation>
@@ -31,22 +29,13 @@
     <object-name>SetALTfixed1</object-name>
     <object-name>SetALTfixed2</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
-  <!--
-  <animation>
-    <type>select</type>
-    <object-name>ALTSETPLUS</object-name>
-	  <object-name>ALTSETMINUS</object-name>
-    <visible>false</visible>
-  </animation>
-  -->
- 
   <!-- Check if AP Altitude is set on and light on the green led-->
   <animation>
     <type>select</type>
@@ -65,9 +54,9 @@
     <type>textranslate</type>
     <object-name>SetALT-H</object-name>
     <property>/autopilot/settings/target-altitude-ft</property>
-    <factor>0.001</factor>
-    <step>100</step>
-    <scroll>1</scroll>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
+    <scroll> 1 </scroll>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
@@ -80,9 +69,9 @@
     <type>textranslate</type>
     <object-name>SetALT-T</object-name>
     <property>/autopilot/settings/target-altitude-ft</property>
-    <factor>0.0001</factor>
-    <step>1000</step>
-    <scroll>1</scroll>
+    <factor>  0.0001 </factor>
+    <step> 1000</step>
+    <scroll>  1</scroll>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
@@ -95,9 +84,9 @@
     <type>textranslate</type>
     <object-name>SetALT-DT</object-name>
     <property>/autopilot/settings/target-altitude-ft</property>
-    <factor>0.00001</factor>
-    <step>10000</step>
-    <scroll>1</scroll>
+    <factor>   0.00001 </factor>
+    <step> 10000 </step>
+    <scroll>   1 </scroll>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
@@ -117,9 +106,9 @@
       <binding>
         <command>property-adjust</command>
         <property>/autopilot/settings/target-altitude-ft</property>
-        <step>100</step>
-        <min>0</min>
-        <max>20000</max>  
+        <step>  100 </step>
+        <min>     0 </min>
+        <max> 20000 </max>  
       </binding>
     </action>
     <action>
@@ -129,9 +118,9 @@
       <binding>
         <command>property-adjust</command>
         <property>/autopilot/settings/target-altitude-ft</property>
-        <step>1000</step>
-        <min>0</min>
-        <max>20000</max>      
+        <step> 1000 </step>
+        <min>     0 </min>
+        <max> 20000 </max>      
       </binding>
     </action>
   </animation>   
@@ -148,9 +137,9 @@
       <binding>
         <command>property-adjust</command>
         <property>/autopilot/settings/target-altitude-ft</property>
-        <step>-100</step>
-        <min>0</min>
-        <max>20000</max> 
+        <step> -100 </step>
+        <min>     0 </min>
+        <max> 20000 </max> 
       </binding>
     </action>
     <action>
@@ -160,13 +149,12 @@
       <binding>
         <command>property-adjust</command>
         <property>/autopilot/settings/target-altitude-ft</property>
-        <step>-1000</step>
-        <min>0</min>
-        <max>20000</max>  
+        <step> -1000 </step>
+        <min>      0 </min>
+        <max>  20000 </max>  
       </binding>
     </action>
   </animation>   
   <!-- End Altidude setting -->
 
 </PropertyList>
-

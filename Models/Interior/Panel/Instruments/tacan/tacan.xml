@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>tacan.ac</path>
-
+  
   <animation>
     <object-name>base</object-name>
     <object-name>chan-knob</object-name>
@@ -20,7 +20,7 @@
     <object-name>go-lamp-off</object-name>
     <object-name>nogo-lamp</object-name>
     <object-name>nogo-lamp-off</object-name>
-
+    
     <object-name>CH-DECR</object-name>
     <object-name>CH-INCR</object-name>
     <object-name>TO-Y</object-name>
@@ -28,19 +28,19 @@
     <object-name>TAC-off</object-name>
     <object-name>TAC-on</object-name>
   </animation>
-
+  
   <!-- lighting -->
   <animation>
     <type>material</type>
     <object-name>base</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.015 </red>
       <green> 0.006 </green>
       <blue>  0.010 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>xy-switch</object-name>
@@ -48,25 +48,25 @@
     <object-name>mode-knob</object-name>
     <object-name>chan-knob</object-name>
     <emission> 
-    <factor-prop>controls/lighting/panel-norm</factor-prop>
-    <red>   0.44 </red>
-    <green> 0.27 </green>
-    <blue>  0.15 </blue>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.44 </red>
+      <green> 0.27 </green>
+      <blue>  0.15 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>go-lamp-off</object-name>
     <object-name>nogo-lamp-off</object-name>
     <emission> 
-    <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
       <red>   0.11 </red>
       <green> 0.07 </green>
       <blue>  0.04 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>vol-knob</object-name>
@@ -78,7 +78,7 @@
       <blue>  0.15 </blue>
     </emission>
   </animation> 
-
+  
   <animation>
     <type>material</type>
     <object-name>drum-1</object-name>
@@ -90,20 +90,13 @@
     <object-name>nogo-lamp</object-name>
     <emission> 
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
-      <red>   0.60 </red>
-      <green> 0.35 </green>
-      <blue>  0.23 </blue>
+      <red>   0.50 </red>
+      <green> 0.55 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-<!--
-  <animation>
-    <type>range</type>
-    <min-m>  0 </min-m>
-    <max-m> 30 </max-m>
-  </animation>
--->
   <!-- End lighting -->
-	
+  
   <animation>
     <type>textranslate</type>
     <object-name>drum-1</object-name>
@@ -116,7 +109,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>drum-2</object-name>
@@ -129,7 +122,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>drum-3</object-name>
@@ -142,7 +135,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>Y-sign</object-name>
@@ -153,7 +146,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>X-sign</object-name>
@@ -164,14 +157,14 @@
       </equals>
     </condition>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>mode-knob</object-name>
     <property>instrumentation/tacan/switch-position</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> -60 </dep></entry>	
+      <entry><ind> 1 </ind><dep> -60 </dep></entry> 
     </interpolation>
     <center>
       <x-m>  0.000 </x-m>
@@ -184,7 +177,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>chan-knob</object-name>
@@ -205,7 +198,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>xy-switch</object-name>
@@ -222,7 +215,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- ================ ACTIONS =================== -->
   <!-- Channel Setting -->
   <!-- Channel Increase -->
@@ -255,7 +248,7 @@
       </binding>
     </action>
   </animation>   
-
+  
   <!-- Channel decrease -->
   <animation>
     <type>pick</type>
@@ -286,7 +279,7 @@
       </binding>
     </action>
   </animation>   
-
+  
   <!-- End Channel setting -->
   <!-- Channel [4] selection ( X or Y) -->
   <animation>
@@ -305,10 +298,10 @@
         <command>property-assign</command>
         <property>instrumentation/tacan/frequencies/selected-channel[4]</property>
         <value type="string">Y</value>
-      </binding>	
+      </binding>  
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>TO-X</object-name>
@@ -328,7 +321,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>TAC-off</object-name>
@@ -343,7 +336,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>TAC-on</object-name>
@@ -358,6 +351,5 @@
       </binding>
     </action>
   </animation>
-
+  
 </PropertyList>
-

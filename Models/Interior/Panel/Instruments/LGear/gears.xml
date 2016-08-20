@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
-	<path>gears.ac</path>
-
+  
+  <path>gears.ac</path>
+  
   <animation>
     <object-name>mount</object-name>
     <object-name>ld-gear-handle</object-name>
@@ -23,9 +23,9 @@
     <object-name>r-gear-safe</object-name>
     <object-name>r-gear-warn</object-name>
   </animation>
-
-	<!-- light-land-switch -->
-	<!-- lighting -->
+  
+  <!-- light-land-switch -->
+  <!-- lighting -->
   <animation>
     <type>material</type>
     <object-name>face</object-name>   
@@ -37,26 +37,26 @@
     <object-name>r-gear-warn</object-name> 
     <object-name>r-gear-safe</object-name> 
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-	
+  
   <animation>
     <type>material</type>
-		<object-name>anti-skid-button</object-name>
+    <object-name>anti-skid-button</object-name>
     <object-name>mount</object-name>
-		<object-name>ld-gear-handle</object-name>
+    <object-name>ld-gear-handle</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.015 </red>
       <green> 0.006 </green>
       <blue>  0.010 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
+  
   <!-- flaps guauge -->
   <animation>
     <name>flaps</name>
@@ -80,7 +80,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <!-- gear warning lights -->
   <!-- nose -->
   <animation>
@@ -90,16 +90,16 @@
       <and>
         <greater-than>
           <property>/gear/gear[0]/position-norm</property>
-        <value>0</value>
+          <value>0</value>
         </greater-than>
-          <less-than>
+        <less-than>
           <property>/gear/gear[0]/position-norm</property>
           <value>1</value>
         </less-than>
       </and>
     </condition>
   </animation>
-
+  
   <!-- left -->
   <animation>
     <type>select</type>
@@ -108,16 +108,16 @@
       <and>
         <greater-than>
           <property>/gear/gear[1]/position-norm</property>
-        <value>0</value>
+          <value>0</value>
         </greater-than>
-          <less-than>
+        <less-than>
           <property>/gear/gear[1]/position-norm</property>
           <value>1</value>
         </less-than>
       </and>
     </condition>
   </animation>
-
+  
   <!-- right --> 
   <animation>
     <type>select</type>
@@ -135,20 +135,20 @@
       </and>
     </condition>
   </animation>
-
+  
   <!-- gear safe lights -->
   <!-- nose -->
   <animation>
-  <type>select</type>
-  <object-name>n-gear-safe</object-name>
-    <condition>	
+    <type>select</type>
+    <object-name>n-gear-safe</object-name>
+    <condition> 
       <equals>
         <property>/gear/gear[0]/position-norm</property>
         <value>1</value>
       </equals>
     </condition>
   </animation>
-
+  
   <!-- left -->
   <animation>
     <type>select</type>
@@ -160,7 +160,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <!-- right -->
   <animation>
     <type>select</type>
@@ -172,7 +172,7 @@
       </equals>
     </condition>
   </animation>
-
+  
   <!-- ld-gear-handle movemet. -->
   <animation>
     <type>rotate</type>
@@ -193,7 +193,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-	
+  
   <animation>
     <type>pick</type>
     <object-name>ld-gear-handle</object-name>
@@ -207,6 +207,5 @@
       </binding>
     </action>
   </animation>
-
+  
 </PropertyList>
-

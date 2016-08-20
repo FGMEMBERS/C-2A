@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>TACdisplay.ac</path>
-	
+  
   <animation>
     <object-name>base</object-name>
     <object-name>dots</object-name>
@@ -19,7 +19,7 @@
     <object-name>KNhdrs</object-name>
     <object-name>KNunits</object-name>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>inrange</object-name>
@@ -34,24 +34,24 @@
     <object-name>KNhdrs</object-name>
     <object-name>KNunits</object-name>
     <emission>
-      <red>   0.035 </red>
-      <green> 0.012 </green>
-      <blue>  0.007 </blue>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
-	
+  
   <animation>
     <type>material</type>
     <object-name>base</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.015 </red>
       <green> 0.006 </green>
       <blue>  0.010 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>inrange</object-name>
@@ -73,8 +73,8 @@
       </equals>
     </condition>
   </animation>
-	
-  <!-- DISTANCE INDICATOR -->	
+  
+  <!-- DISTANCE INDICATOR --> 
   <!-- Nm Distance - decimals -->
   <animation>
     <type>textranslate</type>
@@ -88,164 +88,156 @@
       <y> -1 </y>
       <z>  0 </z>
     </axis>
-  </animation>	
-
-<!-- Nm Distance - UNITS -->
- <animation>
-                <type>textranslate</type>
-                <object-name>NMunits</object-name>
-                <property>/instrumentation/tacan/indicated-distance-nm</property>
-                <factor>0.1</factor>
-                <step>1</step> 
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-<!-- Nm Distance - Deca's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>NMdeca</object-name>
-                <property>/instrumentation/tacan/indicated-distance-nm</property>
-                <factor>0.01</factor>
-                <step>10</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-<!-- Nm Distance - Hundred's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>NMhdrs</object-name>
-                <property>/instrumentation/tacan/indicated-distance-nm</property>
-                <factor>0.001</factor>
-                <step>100</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-
-<!-- KNOTS INDICATOR -->	
-<!-- Knots - UNITS -->
- <animation>
-                <type>textranslate</type>
-                <object-name>KNunits</object-name>
-                <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
-                <factor>0.1</factor>
-                <step>1</step> 
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-	
-
-<!-- Knots - Deca's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>KNdeca</object-name>
-                <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
-                <factor>0.01</factor>
-                <step>10</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-<!-- Knots - Hundred's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>KNhdrs</object-name>
-                <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
-                <factor>0.001</factor>
-                <step>100</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-		
-<!-- TIME TO INDICATOR -->	
-<!-- Time - UNITS -->
- <animation>
-                <type>textranslate</type>
-                <object-name>MINunits</object-name>
-                <property>/instrumentation/tacan/indicated-time-min</property>
-                <factor>0.1</factor>
-                <step>1</step> 
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-<!-- TIME - Deca's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>MINdeca</object-name>
-                <property>/instrumentation/tacan/indicated-time-min</property>
-                <factor>0.01</factor>
-                <step>10</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
-<!-- TIME - Hundred's -->
- <animation>
-                <type>textranslate</type>
-                <object-name>MINhdrs</object-name>
-                <property>/instrumentation/tacan/indicated-time-min</property>
-                <factor>0.001</factor>
-                <step>100</step>
-                <scroll>1</scroll>
-                <axis>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                </axis>
-        </animation>
-
- <!-- Check if Tacan is in range-->
- <animation>
-          <condition>
-                  <equals>
-                  <property>/instrumentation/tacan/in-range</property>
-                  <value>true</value>
-                  </equals>
-          </condition>
-                <type>select</type>
-                <object-name>inrange</object-name>
-                <visible>true</visible>
- </animation>
- 
-
- 
-
-
-   
-
+  </animation>  
+  
+  <!-- Nm Distance - UNITS -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>NMunits</object-name>
+    <property>/instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.1</factor>
+    <step>1</step> 
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Nm Distance - Deca's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>NMdeca</object-name>
+    <property>/instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Nm Distance - Hundred's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>NMhdrs</object-name>
+    <property>/instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- KNOTS INDICATOR -->  
+  <!-- Knots - UNITS -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>KNunits</object-name>
+    <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
+    <factor>0.1</factor>
+    <step>1</step> 
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Knots - Deca's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>KNdeca</object-name>
+    <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Knots - Hundred's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>KNhdrs</object-name>
+    <property>/instrumentation/tacan/indicated-ground-speed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- TIME TO INDICATOR -->  
+  <!-- Time - UNITS -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>MINunits</object-name>
+    <property>/instrumentation/tacan/indicated-time-min</property>
+    <factor>0.1</factor>
+    <step>1</step> 
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- TIME - Deca's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>MINdeca</object-name>
+    <property>/instrumentation/tacan/indicated-time-min</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- TIME - Hundred's -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>MINhdrs</object-name>
+    <property>/instrumentation/tacan/indicated-time-min</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Check if Tacan is in range-->
+  <animation>
+    <condition>
+      <equals>
+        <property>/instrumentation/tacan/in-range</property>
+        <value>true</value>
+      </equals>
+    </condition>
+    <type>select</type>
+    <object-name>inrange</object-name>
+    <visible>true</visible>
+  </animation>
+  
 </PropertyList>

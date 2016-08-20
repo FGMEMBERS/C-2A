@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="c-2a-jsbsim-cnf.xml"> -->
-<PropertyList include="c-2a-yasim-cnf.xml">
+<PropertyList include="Systems/c-2a-base.xml">
 
   <sim>
 
     <description>Grumman C 2A (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM) / Paolo ROTA (Panel)</author>
 
+    <flight-model>yasim</flight-model>
+    <aero>Systems/c-2a-yasim</aero>
+    
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 2 </systems>
@@ -15,7 +17,19 @@
       <model type="int">   4 </model>
     </rating>
 
+    <startup>
+      <splash-texture>Aircraft/C-2A/Splashs/c-2a-splash.png</splash-texture>
+    </startup>
+    
+    <model>
+      <path>Aircraft/C-2A/Models/c-2a.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
+    <help include="Systems/help.xml"/>
+    
   </sim>
 
 </PropertyList>
-

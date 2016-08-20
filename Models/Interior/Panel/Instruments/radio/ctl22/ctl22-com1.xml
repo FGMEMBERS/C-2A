@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- 
-  CTL 22 Comm1 Control for VHF-22 tranceiver
-  Active and preset displayed + 6 frequency memory storage
-  2.375"W x 2.625"H
-  Freq. range 118.000 - 135.975 (normal) @ 25 khz spacing
-  Syd Adams
--->
+<!-- CTL 22 Comm1 Control for VHF-22 tranceiver
+     Active and preset displayed + 6 frequency memory storage
+     2.375"W x 2.625"H
+     Freq. range 118.000 - 135.975 (normal) @ 25 khz spacing
+     Syd Adams -->
 <PropertyList>
-
+  
   <path>ctl22.ac</path>
-
+  
   <animation>
     <object-name>CTL-22</object-name>
     <object-name>C22freq.001</object-name>
@@ -38,7 +36,7 @@
     <object-name>C22test.btn</object-name>
     <object-name>C22sto.btn</object-name>
     <object-name>C22act.btn</object-name>
-
+    
     <object-name>C22pwr.off</object-name>
     <object-name>C22pwr.on</object-name>
     <object-name>C22freq.dwn</object-name>
@@ -46,7 +44,7 @@
     <object-name>CTL-22.xfr</object-name>
     <object-name>CTL-22.mem</object-name>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>C22freq.001</object-name>
@@ -73,7 +71,7 @@
       </greater-than>
     </condition>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>CTL-22</object-name>
@@ -101,7 +99,7 @@
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>CTL-22.pwr</object-name>
@@ -118,7 +116,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>CTL-22.vol</object-name>
@@ -135,7 +133,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <!--    Active Frequency   -->
   <animation>
     <type>textranslate</type>
@@ -150,7 +148,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22freq.002</object-name>
@@ -164,7 +162,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22freq.003</object-name>
@@ -178,7 +176,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22freq.004</object-name>
@@ -192,7 +190,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22freq.005</object-name>
@@ -206,7 +204,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22freq.006</object-name>
@@ -220,7 +218,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- Preselected Frequency -->
   <animation>
     <type>textranslate</type>
@@ -235,7 +233,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22stby.002</object-name>
@@ -249,7 +247,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22stby.003</object-name>
@@ -263,7 +261,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22stby.004</object-name>
@@ -277,7 +275,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22stby.005</object-name>
@@ -291,7 +289,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>C22stby.006</object-name>
@@ -305,7 +303,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <!-- OSG hotspots -->
   <animation>
     <type>pick</type>
@@ -321,13 +319,13 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>CTL-22.mem</object-name>
     <visible>false</visible>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22pwr.off</object-name>
@@ -345,7 +343,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22pwr.on</object-name>
@@ -361,15 +359,15 @@
         <max>2</max>
         <wrap>0</wrap>
       </binding>
-			<!-- IQuesto sarà probabilmete da togliere ed da aseganre allo switch della console elettrica -->
-			<binding>
-			  <command>property-assign</command>
-			  <property>systems/electrical/outputs/comm[0]</property>
-			  <value>2</value>
-			</binding>	
+      <!-- IQuesto sarà probabilmete da togliere ed da aseganre allo switch della console elettrica -->
+      <binding>
+        <command>property-assign</command>
+        <property>systems/electrical/outputs/comm[0]</property>
+        <value>2</value>
+      </binding>  
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22pwr.off</object-name>
@@ -388,7 +386,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22pwr.on</object-name>
@@ -407,7 +405,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22freq.dwn</object-name>
@@ -426,7 +424,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22freq.up</object-name>
@@ -445,7 +443,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22freq.dwn</object-name>
@@ -464,7 +462,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>C22freq.up</object-name>
@@ -483,6 +481,5 @@
       </binding>
     </action>
   </animation>
-
+  
 </PropertyList>
-

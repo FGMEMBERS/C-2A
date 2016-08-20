@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 3
 OBJECT poly
@@ -7,8 +7,9 @@ name "panel1"
 loc 0 0 -0
 data 6
 panel1
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 166
 0.51267 -0.560763 0
 -0.135207 -0.196527 -0.693918
@@ -1267,8 +1268,9 @@ name "panel2"
 loc 0 0 -0
 data 6
 panel2
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 19
 -0.080453 0.326851 -0.000001
 -0.009248 0.398101 0.279313
@@ -1403,8 +1405,9 @@ name "panel3"
 loc 0 0 -0
 data 6
 panel3
-texture "colors.png"
-texrep 1 1
+texture "panel.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 350
 -0.129497 -0.145559 0.459797
 -0.129449 -0.145771 0.352987

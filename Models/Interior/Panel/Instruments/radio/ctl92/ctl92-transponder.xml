@@ -1,150 +1,176 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <!-- CTL 92 Control for TDR-94 transponder
-2.375"W x 2.625"H
-Syd Adams
- -->
-
+     2.375"W x 2.625"H
+     Syd Adams -->
 <PropertyList>
-
-    <path>ctl92.ac</path>
-
-    <animation>
-        <type>select</type>
-        <object-name>C92freq.001</object-name>
-        <object-name>C92freq.002</object-name>
-        <object-name>C92freq.003</object-name>
-        <object-name>C92freq.004</object-name>
-        <object-name>C92mem.annun</object-name>
-        <condition>
-            <and>
-                <greater-than>
-                    <property>systems/electrical/outputs/transponder</property>
-                    <value>1</value>
-                </greater-than>
-                <greater-than>
-                    <property>instrumentation/kt-70/inputs/func-knob</property>
-                    <value>0</value>
-                </greater-than>
-            </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>CTL-92.pwr</object-name>
+  
+  <path>ctl92.ac</path>
+  
+  <animation>
+    <object-name>CTL-92</object-name>
+    <object-name>C92freq.001</object-name>
+    <object-name>C92freq.002</object-name>
+    <object-name>C92freq.003</object-name>
+    <object-name>C92freq.004</object-name>
+    <object-name>stby1</object-name>
+    <object-name>stby2</object-name>
+    <object-name>stby3</object-name>
+    <object-name>stby4</object-name>
+    <object-name>C92mem.annun</object-name>
+    <object-name>CTL-92.toggle</object-name>
+    <object-name>CTL-92.pwr</object-name>
+    <object-name>CTL-92.vol</object-name>
+    <object-name>freq.knob</object-name>
+    <object-name>xmt.annun</object-name>
+    <object-name>atc.ident</object-name>
+    <object-name>atc.test</object-name>
+    <object-name>act.pre</object-name>
+    
+    <object-name>CTL-92.xfr</object-name>
+    <object-name>CTL-92.mem</object-name>
+    <object-name>ADFpwr.off</object-name>
+    <object-name>ADFpwr.on</object-name>
+    <object-name>ADFfreq.dwn</object-name>
+    <object-name>ADFfreq.up</object-name>    
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>C92freq.001</object-name>
+    <object-name>C92freq.002</object-name>
+    <object-name>C92freq.003</object-name>
+    <object-name>C92freq.004</object-name>
+    <object-name>C92mem.annun</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>systems/electrical/outputs/transponder</property>
+          <value>1</value>
+        </greater-than>
+        <greater-than>
+          <property>instrumentation/kt-70/inputs/func-knob</property>
+          <value>0</value>
+        </greater-than>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CTL-92.pwr</object-name>
+    <property>instrumentation/kt-70/inputs/func-knob</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.014 </y-m>
+      <z-m> -0.018 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>C92freq.001</object-name>
+    <property>instrumentation/kt-70/outputs/id-code</property>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>C92freq.002</object-name>
+    <property>instrumentation/kt-70/outputs/id-code</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>C92freq.003</object-name>
+    <property>instrumentation/kt-70/outputs/id-code</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>C92freq.004</object-name>
+    <property>instrumentation/kt-70/outputs/id-code</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!--    OSG hotspots    -->
+  <animation>
+    <type>pick</type>
+    <object-name>C92pwr.off</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
         <property>instrumentation/kt-70/inputs/func-knob</property>
-        <factor>15</factor>
-        <center>
-            <x-m>0.0</x-m>
-            <y-m>-0.014</y-m>
-            <z-m>-0.018</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>textranslate</type>
-        <object-name>C92freq.001</object-name>
-        <property>instrumentation/kt-70/outputs/id-code</property>
-        <factor>0.0001</factor>
-        <step>1000</step>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>textranslate</type>
-        <object-name>C92freq.002</object-name>
-        <property>instrumentation/kt-70/outputs/id-code</property>
-        <factor>0.001</factor>
-        <step>100</step>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>textranslate</type>
-        <object-name>C92freq.003</object-name>
-        <property>instrumentation/kt-70/outputs/id-code</property>
-        <factor>0.01</factor>
-        <step>10</step>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>textranslate</type>
-        <object-name>C92freq.004</object-name>
-        <property>instrumentation/kt-70/outputs/id-code</property>
-        <factor>0.1</factor>
+        <step>-1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>C92pwr.on</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
         <step>1</step>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-<!--    OSG hotspots    -->
-
-    <animation>
-        <type>pick</type>
-        <object-name>C92pwr.off</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-            <command>property-adjust</command>
-            <property>instrumentation/kt-70/inputs/func-knob</property>
-            <step>-1</step>
-            <min>0</min>
-            <max>5</max>
-            <wrap>0</wrap>
-        </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>C92pwr.on</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-            <command>property-adjust</command>
-            <property>instrumentation/kt-70/inputs/func-knob</property>
-            <step>1</step>
-            <min>0</min>
-            <max>5</max>
-            <wrap>0</wrap>
-        </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>atc.ident</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-            <command>property-toggle</command>
-            <property>instrumentation/kt-70/inputs/ident-btn</property>
-        </binding>
-        </action>
-    </animation>
-
+        <min>0</min>
+        <max>5</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>atc.ident</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/kt-70/inputs/ident-btn</property>
+      </binding>
+    </action>
+  </animation>
+  
 </PropertyList>
