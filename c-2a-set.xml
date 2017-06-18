@@ -17,6 +17,24 @@
       <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>cargo</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>grumman</tag>
+      <tag>gulfwar1</tag>
+      <tag>high-wing</tag>
+      <tag>retractable-gear</tag>
+      <tag>h-tail</tag>
+      <tag>ifr</tag>
+      <tag>tail-hook</tag>
+      <tag>wing-fold</tag>
+      <tag>turboprop</tag>
+      <tag>twin-engine</tag>
+    </tags>
+
     <startup>
       <splash-texture>Aircraft/C-2A/Splashs/c-2a-splash.png</splash-texture>
     </startup>
