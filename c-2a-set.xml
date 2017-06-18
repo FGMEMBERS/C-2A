@@ -38,6 +38,19 @@
     <startup>
       <splash-texture>Aircraft/C-2A/Splashs/c-2a-splash.png</splash-texture>
     </startup>
+
+    <previews>
+      <preview>
+	<type>exterior</type>
+	<splash type="bool">true</splash>
+	<path>Splashs/c2a-exterior.jpg</path>
+      </preview>
+      <preview>
+	<type>panel</type>
+	<splash type="bool">false</splash>
+	<path>Splashs/c2a-interior.jpg</path>
+      </preview>
+    </previews>
     
     <model>
       <path>Aircraft/C-2A/Models/c-2a.xml</path>
