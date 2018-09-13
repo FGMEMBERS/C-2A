@@ -54,6 +54,7 @@
     
     <model>
       <path>Aircraft/C-2A/Models/c-2a.xml</path>
+      <fallback-model-index type="int">551</fallback-model-index>
       <livery>
         <file type="string">default</file>
       </livery>

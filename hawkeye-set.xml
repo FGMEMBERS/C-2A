@@ -34,6 +34,7 @@
     
     <model>
       <path>Aircraft/C-2A/Models/hawkeye.xml</path>
+      <fallback-model-index type="int">551</fallback-model-index>
       <livery>
         <file type="string">default</file>
       </livery>
