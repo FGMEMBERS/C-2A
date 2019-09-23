@@ -15,13 +15,26 @@
       <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <variant-of>c-2a</variant-of>
     
     <startup>
       <splash-texture>Aircraft/C-2A/Splashs/hawkeye-splash.png</splash-texture>
     </startup>
+
+    <previews>
+      <preview>
+	<type>exterior</type>
+	<splash type="bool">true</splash>
+	<path>Splashs/e2c-exterior.jpg</path>
+      </preview>
+    </previews>
+	
+
     
     <model>
       <path>Aircraft/C-2A/Models/hawkeye.xml</path>
+      <fallback-model-index type="int">551</fallback-model-index>
       <livery>
         <file type="string">default</file>
       </livery>
